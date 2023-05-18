@@ -10,7 +10,7 @@ public class PlayerMotor : MonoBehaviour
     private float speed = 5f;
     public float gravity = -9.8f;
     private float groundedForce = -2f;
-    public float jumpHeight = 3f;
+    public float jumpHeight = 2f;
     public bool sprinting = false;
     private float sprintSpeed = 10f;
 
