@@ -203,6 +203,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2592626533922274412, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
+      propertyPath: hitEffect
+      value: 
+      objectReference: {fileID: 2430543465817118993, guid: 8a8d4d982bae7a24fa235e899a5a750f, type: 3}
+    - target: {fileID: 2592626533922274412, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
+      propertyPath: muzzleFlash
+      value: 
+      objectReference: {fileID: 1620066706}
+    - target: {fileID: 7166028579300172239, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7166028579300172239, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7166309822043611497, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7713165518996794835, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -376,6 +396,8 @@ MonoBehaviour:
   FPCamera: {fileID: 126087069}
   range: 100
   damage: 30
+  muzzleFlash: {fileID: 0}
+  hitEffect: {fileID: 0}
 --- !u!1 &465200383
 GameObject:
   m_ObjectHideFlags: 0
@@ -980,6 +1002,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1607848134}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!198 &1620066706 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6569097289241700413, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
+  m_PrefabInstance: {fileID: 205757819}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1893991843
 GameObject:
   m_ObjectHideFlags: 0
