@@ -14,13 +14,12 @@ public class InputManagerWeapons : MonoBehaviour
         playerInput = new PlayerInput();
         weapon = playerInput.Weapons;
         shoot = GetComponent<Weapon>();
+
+        weapon.Shoot.performed += ctx => shoot.Shoot();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        shoot.Shoot(weapon.Shoot.IsPressed());
-    }
+   
+    
     private void OnEnable()
     {
         

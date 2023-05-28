@@ -62,6 +62,15 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""WeaponZoom"",
+                    ""type"": ""Button"",
+                    ""id"": ""607d7b63-3c87-4c27-af12-c756dcdc9f91"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -240,6 +249,28 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""action"": ""Sprint"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6d47610b-9391-441b-9298-dbf3b2edaea6"",
+                    ""path"": ""<Keyboard>/ctrl"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""WeaponZoom"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""fa327623-d2a4-4257-a180-fdd295c49321"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""WeaponZoom"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -291,6 +322,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         m_Foot_Jump = m_Foot.FindAction("Jump", throwIfNotFound: true);
         m_Foot_Look = m_Foot.FindAction("Look", throwIfNotFound: true);
         m_Foot_Sprint = m_Foot.FindAction("Sprint", throwIfNotFound: true);
+        m_Foot_WeaponZoom = m_Foot.FindAction("WeaponZoom", throwIfNotFound: true);
         // Weapons
         m_Weapons = asset.FindActionMap("Weapons", throwIfNotFound: true);
         m_Weapons_Shoot = m_Weapons.FindAction("Shoot", throwIfNotFound: true);
@@ -359,6 +391,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_Foot_Jump;
     private readonly InputAction m_Foot_Look;
     private readonly InputAction m_Foot_Sprint;
+    private readonly InputAction m_Foot_WeaponZoom;
     public struct FootActions
     {
         private @PlayerInput m_Wrapper;
@@ -367,6 +400,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         public InputAction @Jump => m_Wrapper.m_Foot_Jump;
         public InputAction @Look => m_Wrapper.m_Foot_Look;
         public InputAction @Sprint => m_Wrapper.m_Foot_Sprint;
+        public InputAction @WeaponZoom => m_Wrapper.m_Foot_WeaponZoom;
         public InputActionMap Get() { return m_Wrapper.m_Foot; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -388,6 +422,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Sprint.started += instance.OnSprint;
             @Sprint.performed += instance.OnSprint;
             @Sprint.canceled += instance.OnSprint;
+            @WeaponZoom.started += instance.OnWeaponZoom;
+            @WeaponZoom.performed += instance.OnWeaponZoom;
+            @WeaponZoom.canceled += instance.OnWeaponZoom;
         }
 
         private void UnregisterCallbacks(IFootActions instance)
@@ -404,6 +441,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Sprint.started -= instance.OnSprint;
             @Sprint.performed -= instance.OnSprint;
             @Sprint.canceled -= instance.OnSprint;
+            @WeaponZoom.started -= instance.OnWeaponZoom;
+            @WeaponZoom.performed -= instance.OnWeaponZoom;
+            @WeaponZoom.canceled -= instance.OnWeaponZoom;
         }
 
         public void RemoveCallbacks(IFootActions instance)
@@ -473,6 +513,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         void OnJump(InputAction.CallbackContext context);
         void OnLook(InputAction.CallbackContext context);
         void OnSprint(InputAction.CallbackContext context);
+        void OnWeaponZoom(InputAction.CallbackContext context);
     }
     public interface IWeaponsActions
     {

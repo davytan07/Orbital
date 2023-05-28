@@ -10,32 +10,23 @@ public class Weapon : MonoBehaviour
     [SerializeField] float damage = 30f;
     [SerializeField] ParticleSystem muzzleFlash;
     [SerializeField] GameObject hitEffect;
+    [SerializeField] Ammo ammoSlot;
 
     private void PlayMuzzleFlash()
     {
         muzzleFlash.Play();
     }
    
-    public void Shoot(bool clicked)
+    public void Shoot()
     {
-        if (clicked)
+        if (ammoSlot.GetCurrentAmmo() > 0)
         {
             PlayMuzzleFlash();
-            RaycastHit hit;
-            if (Physics.Raycast(FPCamera.transform.position, FPCamera.transform.forward, out hit, range))
-            {
-                CreateHitImpact(hit);
-                EnemyHealth target = hit.transform.GetComponent<EnemyHealth>();
-                // call a method on EnemyHealth that decreases the enemy's health
-                if (target == null) return;
-                target.TakeDamage(damage);
-
-            }
-            else
-            {
-                return;
-            }
+            ammoSlot.ReducedAmmo();
+            ProcessRaycast();
         }
+        
+        
         
     }
 
@@ -43,5 +34,23 @@ public class Weapon : MonoBehaviour
     {
         GameObject impact = Instantiate(hitEffect, hit.point, Quaternion.LookRotation(hit.normal));
         Destroy(impact, 1f);
+    }
+
+    private void ProcessRaycast()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(FPCamera.transform.position, FPCamera.transform.forward, out hit, range))
+        {
+            CreateHitImpact(hit);
+            EnemyHealth target = hit.transform.GetComponent<EnemyHealth>();
+            // call a method on EnemyHealth that decreases the enemy's health
+            if (target == null) return;
+            target.TakeDamage(damage);
+
+        }
+        else
+        {
+            return;
+        }
     }
 }

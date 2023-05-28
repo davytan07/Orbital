@@ -9,7 +9,8 @@ public class InputManager : MonoBehaviour
     private PlayerInput.FootActions foot;
     private PlayerMotor motor;
     private PlayerLook look;
-    
+    private WeaponZoom zoom;
+
     void Awake()
     {
         playerInput = new PlayerInput();
@@ -17,9 +18,11 @@ public class InputManager : MonoBehaviour
 
         motor = GetComponent<PlayerMotor>();
         look = GetComponent<PlayerLook>();
+        zoom = GetComponent<WeaponZoom>();
         
         foot.Jump.performed += ctx => motor.Jump();
         foot.Sprint.performed += ctx => motor.Sprint();
+        foot.WeaponZoom.performed += ctx => zoom.ProcessZoom();
     }
     void FixedUpdate()
     {
