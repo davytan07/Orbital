@@ -11,7 +11,7 @@ public class PlayerMotor : MonoBehaviour
     public float gravity = -9.8f;
     private float groundedForce = -2f;
     public float jumpHeight = 2f;
-    public bool sprinting = false;
+    private bool sprinting = false;
     private float sprintSpeed = 10f;
 
     // Start is called before the first frame update
@@ -54,5 +54,6 @@ public class PlayerMotor : MonoBehaviour
             speed = sprintSpeed;
         else
             speed = 5;
+        Debug.Log("Sprinting");
     }
 }
