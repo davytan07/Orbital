@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 2068210374094836339}
   - component: {fileID: 4059915529650108440}
   - component: {fileID: 7758567671956808643}
+  - component: {fileID: 266835242082348980}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -240,7 +241,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gravity: -9.8
   jumpHeight: 3
-  sprinting: 0
 --- !u!114 &389742665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311,6 +311,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ammoAmount: 10
+--- !u!114 &266835242082348980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7713165518996794839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0af193a11b7ff1e4f92f0512355908f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 100
 --- !u!1001 &5528582280430544601
 PrefabInstance:
   m_ObjectHideFlags: 0

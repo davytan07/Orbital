@@ -11,15 +11,22 @@ public class EnemyAI : MonoBehaviour
     float distanceToTarget = Mathf.Infinity;
     bool isProvoked = false;
     float turnSpeed = 5f;
+    EnemyHealth health;
     // Start is called before the first frame update
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
+        health = GetComponent<EnemyHealth>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (health.IsDead())
+        {
+            enabled = false;
+            navMeshAgent.enabled = false;
+        }
         distanceToTarget = Vector3.Distance(target.position, transform.position);
         if (isProvoked)
         {
@@ -28,7 +35,7 @@ public class EnemyAI : MonoBehaviour
         else if(distanceToTarget <= chaseRange)
         {
             isProvoked = true;
-            //navMeshAgent.SetDestination(target.position);
+            navMeshAgent.SetDestination(target.position);
         }
 
     }
@@ -36,6 +43,7 @@ public class EnemyAI : MonoBehaviour
     public void OnDamageTaken()
     {
         isProvoked = true;
+        
     }
     private void EngageTarget()
     {
@@ -51,10 +59,13 @@ public class EnemyAI : MonoBehaviour
     }
     private void ChaseTarget()
     {
+        GetComponent<Animator>().SetTrigger("Walk Forward");
         navMeshAgent.SetDestination(target.position);
     }
     private void AttackTarget()
     {
+        GetComponent<Animator>().SetBool("Walk Forward", false);
+        GetComponent<Animator>().SetTrigger("Stab Attack");
         Debug.Log(name + "has seeked and is destroying" + target.name);
     }
 
