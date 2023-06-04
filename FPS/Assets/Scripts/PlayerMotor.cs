@@ -7,12 +7,13 @@ public class PlayerMotor : MonoBehaviour
     private CharacterController controller;
     private Vector3 playerVelocity;
     private bool isGrounded;
-    private float speed = 5f;
-    public float gravity = -9.8f;
+    private float gravity = -9.8f;
     private float groundedForce = -2f;
-    public float jumpHeight = 2f;
     private bool sprinting = false;
-    private float sprintSpeed = 10f;
+    private float speed = 7f;
+    public float defaultSpeed = 7f;
+    public float sprintSpeed = 14f;
+    public float jumpHeight = 2f;
 
     // Start is called before the first frame update
     void Start()
@@ -53,7 +54,7 @@ public class PlayerMotor : MonoBehaviour
         if (sprinting)
             speed = sprintSpeed;
         else
-            speed = 5;
+            speed = defaultSpeed;
         Debug.Log("Sprinting");
     }
 }
