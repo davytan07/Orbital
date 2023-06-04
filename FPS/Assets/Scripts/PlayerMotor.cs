@@ -12,9 +12,10 @@ public class PlayerMotor : MonoBehaviour
     private float groundedForce = -2f;
     public float jumpHeight = 2f;
 
+
     [Header("Stamina Speed Parameters")]
     [HideInInspector] bool hasRegenerated = true;
-    [HideInInspector] bool sprinting = false;
+    [HideInInspector] float speed = 5f;
     [SerializeField] private float sprintSpeed = 8f;
     [SerializeField] private float slowSpeed = 2f;
     [SerializeField] private float normalSpeed = 5f;
