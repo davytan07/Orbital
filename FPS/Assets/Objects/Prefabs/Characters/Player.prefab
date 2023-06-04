@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 4059915529650108440}
   - component: {fileID: 7758567671956808643}
   - component: {fileID: 266835242082348980}
+  - component: {fileID: 4466476559392085392}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -241,6 +242,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gravity: -9.8
   jumpHeight: 3
+  sprintSpeed: 8
+  slowSpeed: 2
+  normalSpeed: 5
 --- !u!114 &389742665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,6 +328,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 100
+--- !u!114 &4466476559392085392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7713165518996794839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7a97471e459b9f4eb375d929b70c3cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStamina: 100
+  maxStamina: 100
+  staminaDrain: 10
+  staminaRegen: 10
+  staminaProgressUI: {fileID: 0}
+  sliderCanvas: {fileID: 0}
 --- !u!1001 &5528582280430544601
 PrefabInstance:
   m_ObjectHideFlags: 0

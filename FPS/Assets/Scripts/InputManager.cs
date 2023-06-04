@@ -11,6 +11,7 @@ public class InputManager : MonoBehaviour
     private PlayerLook look;
     private WeaponZoom zoom;
 
+
     void Awake()
     {
         playerInput = new PlayerInput();
@@ -19,14 +20,13 @@ public class InputManager : MonoBehaviour
         motor = GetComponent<PlayerMotor>();
         look = GetComponent<PlayerLook>();
         zoom = GetComponent<WeaponZoom>();
-        
+
         foot.Jump.performed += ctx => motor.Jump();
-        foot.Sprint.performed += ctx => motor.Sprint();
         foot.WeaponZoom.performed += ctx => zoom.ProcessZoom();
     }
     void FixedUpdate()
     {
-        motor.ProcessMove(foot.Movement.ReadValue<Vector2>());
+        motor.ProcessMove(foot.Movement.ReadValue<Vector2>(), foot.Sprint.ReadValue<float>() > 0.1f );
     }
     private void LateUpdate() 
     {

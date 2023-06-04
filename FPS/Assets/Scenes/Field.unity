@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -161,6 +161,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gravity: -9.8
   jumpHeight: 1
+  sprintSpeed: 8
+  slowSpeed: 2
+  normalSpeed: 5
 --- !u!114 &134750905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -586,6 +589,22 @@ PrefabInstance:
 --- !u!223 &863889089 stripped
 Canvas:
   m_CorrespondingSourceObject: {fileID: 8840630896197611734, guid: d5a9fc552aaac4b4982283e43cbd2839, type: 3}
+  m_PrefabInstance: {fileID: 863889088}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &863889090 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4819969213019269458, guid: d5a9fc552aaac4b4982283e43cbd2839, type: 3}
+  m_PrefabInstance: {fileID: 863889088}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!225 &863889091 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 7234610445276276885, guid: d5a9fc552aaac4b4982283e43cbd2839, type: 3}
   m_PrefabInstance: {fileID: 863889088}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &907454830
@@ -13005,6 +13024,14 @@ PrefabInstance:
       propertyPath: gameOverCanvas
       value: 
       objectReference: {fileID: 863889089}
+    - target: {fileID: 4466476559392085392, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
+      propertyPath: sliderCanvas
+      value: 
+      objectReference: {fileID: 863889091}
+    - target: {fileID: 4466476559392085392, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
+      propertyPath: staminaProgressUI
+      value: 
+      objectReference: {fileID: 863889090}
     - target: {fileID: 7713165518996794835, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
       propertyPath: m_RootOrder
       value: 2
