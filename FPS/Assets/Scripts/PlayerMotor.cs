@@ -8,8 +8,7 @@ public class PlayerMotor : MonoBehaviour
     private Vector3 playerVelocity;
     private StaminaBar staminaBar;
     private bool isGrounded;
-    private float speed = 5f;
-    public float gravity = -9.8f;
+    private float gravity = -9.8f;
     private float groundedForce = -2f;
     public float jumpHeight = 2f;
 
@@ -81,6 +80,5 @@ public class PlayerMotor : MonoBehaviour
         {
             hasRegenerated = false;
         }
-
     }
 }
