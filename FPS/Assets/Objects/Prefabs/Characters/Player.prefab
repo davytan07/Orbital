@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 7758567671956808643}
   - component: {fileID: 266835242082348980}
   - component: {fileID: 4466476559392085392}
+  - component: {fileID: 1241617232941518511}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -240,11 +241,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e0d534c74d3a3488c53fac8d95a16d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravity: -9.8
-  jumpHeight: 3
-  sprintSpeed: 8
-  slowSpeed: 2
-  normalSpeed: 5
+  jumpHeight: 2
+  sprintSpeed: 12
+  slowSpeed: 3
+  normalSpeed: 7
 --- !u!114 &389742665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,10 +342,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerStamina: 100
   maxStamina: 100
-  staminaDrain: 10
+  staminaDrain: 20
   staminaRegen: 10
   staminaProgressUI: {fileID: 0}
   sliderCanvas: {fileID: 0}
+--- !u!114 &1241617232941518511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7713165518996794839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6be647b7cbfb24ff9823930f2585914e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 0}
+  isPaused: 0
+  MainMenu: MainMenu
 --- !u!1001 &5528582280430544601
 PrefabInstance:
   m_ObjectHideFlags: 0
