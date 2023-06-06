@@ -12,6 +12,8 @@ public class EnemyAI : MonoBehaviour
     bool isProvoked = false;
     float turnSpeed = 5f;
     EnemyHealth health;
+    [SerializeField] AudioSource enemyCrawlSFX;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +34,7 @@ public class EnemyAI : MonoBehaviour
         {
             EngageTarget();
         }
-        else if(distanceToTarget <= chaseRange)
+        else if (distanceToTarget <= chaseRange)
         {
             isProvoked = true;
             navMeshAgent.SetDestination(target.position);
@@ -45,6 +47,7 @@ public class EnemyAI : MonoBehaviour
         isProvoked = true;
         
     }
+
     private void EngageTarget()
     {
         FaceTarget();
@@ -57,11 +60,13 @@ public class EnemyAI : MonoBehaviour
             AttackTarget();
         }
     }
+
     private void ChaseTarget()
     {
         GetComponent<Animator>().SetTrigger("Walk Forward");
         navMeshAgent.SetDestination(target.position);
     }
+
     private void AttackTarget()
     {
         GetComponent<Animator>().SetBool("Walk Forward", false);

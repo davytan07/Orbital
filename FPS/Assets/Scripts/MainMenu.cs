@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public string LevelSelection;
+    public AudioSource ButtonSound;
 
     // Start is called before the first frame update
     void Start()
@@ -22,18 +23,31 @@ public class MainMenu : MonoBehaviour
     // Loads Level Selection Scene
     public void StartGame()
     {
-        SceneManager.LoadScene(LevelSelection);
+        ClickButtonSound();
+        SceneManager.LoadScene("LevelSelection");
     }
 
     // Loads Options Menu
     public void OptionsMenu()
     {
-
+        ClickButtonSound();
     }
 
     // Exits out of the game
     public void QuitGame()
     {
+        ClickButtonSound();
         Application.Quit();
+    }
+
+    public void ClickButtonSound()
+    {
+        ButtonSound.Play();
+        StartCoroutine(Delay());
+    }
+
+    private IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(0.2f); // Wait for 0.2 seconds
     }
 }

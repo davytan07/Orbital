@@ -280,8 +280,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Im Done
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9ffe53f2ff645cc4daa7b8e0b39d86f3, type: 2}
+  m_sharedMaterial: {fileID: 7868835476617041976, guid: 9ffe53f2ff645cc4daa7b8e0b39d86f3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -827,7 +827,7 @@ Transform:
   - {fileID: 6751933069194492347}
   - {fileID: 6751933067910931004}
   - {fileID: 8884082704058529175}
-  - {fileID: 1708182636949406472}
+  - {fileID: 7455389212746350285}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1112,8 +1112,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: You DEAD
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9ffe53f2ff645cc4daa7b8e0b39d86f3, type: 2}
+  m_sharedMaterial: {fileID: 7868835476617041976, guid: 9ffe53f2ff645cc4daa7b8e0b39d86f3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1247,8 +1247,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Play Again
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9ffe53f2ff645cc4daa7b8e0b39d86f3, type: 2}
+  m_sharedMaterial: {fileID: 7868835476617041976, guid: 9ffe53f2ff645cc4daa7b8e0b39d86f3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1415,49 +1415,13 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!1001 &5377931397038141572
+--- !u!1001 &4206419155638455617
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 6751933068144049181}
     m_Modifications:
-    - target: {fileID: 1575480334407291194, guid: 8c1b3a474a5c441db954c383d1ed60a9, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 5723334310937265478, guid: 8c1b3a474a5c441db954c383d1ed60a9, type: 3}
-    - target: {fileID: 1575480334407291194, guid: 8c1b3a474a5c441db954c383d1ed60a9, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ReturnToMainMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 1575480334447586208, guid: 8c1b3a474a5c441db954c383d1ed60a9, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 5723334310937265478, guid: 8c1b3a474a5c441db954c383d1ed60a9, type: 3}
-    - target: {fileID: 1575480334447586208, guid: 8c1b3a474a5c441db954c383d1ed60a9, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: QuitGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 1575480334795591694, guid: 8c1b3a474a5c441db954c383d1ed60a9, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 5723334310937265478, guid: 8c1b3a474a5c441db954c383d1ed60a9, type: 3}
-    - target: {fileID: 1575480334795591694, guid: 8c1b3a474a5c441db954c383d1ed60a9, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OptionsMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 1575480334802753932, guid: 8c1b3a474a5c441db954c383d1ed60a9, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 5723334310937265478, guid: 8c1b3a474a5c441db954c383d1ed60a9, type: 3}
-    - target: {fileID: 1575480334802753932, guid: 8c1b3a474a5c441db954c383d1ed60a9, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ResumeGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 5723334310937265478, guid: 8c1b3a474a5c441db954c383d1ed60a9, type: 3}
-      propertyPath: pauseMenu
-      value: 
-      objectReference: {fileID: 1708182636949406475}
     - target: {fileID: 6707811557285098380, guid: 8c1b3a474a5c441db954c383d1ed60a9, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1546,15 +1510,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pause Menu
       objectReference: {fileID: 0}
+    - target: {fileID: 6707811557285098383, guid: 8c1b3a474a5c441db954c383d1ed60a9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c1b3a474a5c441db954c383d1ed60a9, type: 3}
---- !u!224 &1708182636949406472 stripped
+--- !u!224 &7455389212746350285 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6707811557285098380, guid: 8c1b3a474a5c441db954c383d1ed60a9, type: 3}
-  m_PrefabInstance: {fileID: 5377931397038141572}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1708182636949406475 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6707811557285098383, guid: 8c1b3a474a5c441db954c383d1ed60a9, type: 3}
-  m_PrefabInstance: {fileID: 5377931397038141572}
+  m_PrefabInstance: {fileID: 4206419155638455617}
   m_PrefabAsset: {fileID: 0}

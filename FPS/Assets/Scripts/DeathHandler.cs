@@ -5,6 +5,7 @@ using UnityEngine;
 public class DeathHandler : MonoBehaviour
 {
     [SerializeField] Canvas gameOverCanvas;
+    public AudioSource DeathSFX;
 
     private void Start()
     {
@@ -13,6 +14,7 @@ public class DeathHandler : MonoBehaviour
 
     public void HandleDeath()
     {
+        DeathSFX.Play();
         gameOverCanvas.enabled = true;
         Time.timeScale = 0;
         Cursor.lockState = CursorLockMode.None;

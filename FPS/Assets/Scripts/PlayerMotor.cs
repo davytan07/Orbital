@@ -19,6 +19,11 @@ public class PlayerMotor : MonoBehaviour
     [SerializeField] private float sprintSpeed = 8f;
     [SerializeField] private float slowSpeed = 2f;
     [SerializeField] private float normalSpeed = 5f;
+    [SerializeField] private AudioSource walkingSFX;
+    [SerializeField] private AudioSource sprintingSFX;
+    [SerializeField] private AudioSource slowWalkingSFX;
+    [SerializeField] private AudioSource jumpSFX;
+    private AudioSource currMovementSFX;
 
     // Start is called before the first frame update
     void Start()
@@ -37,15 +42,18 @@ public class PlayerMotor : MonoBehaviour
     {
         if (isKeyHeld && hasRegenerated)
         {
+            currMovementSFX = sprintingSFX;
             Sprint();
         }
         else if (!isKeyHeld && hasRegenerated)
         {
+            currMovementSFX = walkingSFX;
             speed = normalSpeed;
             staminaBar.RegenStamina();
         }
         else
-        {
+        {   
+            currMovementSFX = slowWalkingSFX;
             speed = slowSpeed;
             staminaBar.RegenStamina();
             if (staminaBar.fullStamina())
@@ -69,6 +77,7 @@ public class PlayerMotor : MonoBehaviour
     {
         if (isGrounded)
         {
+            jumpSFX.Play();
             playerVelocity.y = Mathf.Sqrt(jumpHeight * -3.0f * gravity);
         }
     }

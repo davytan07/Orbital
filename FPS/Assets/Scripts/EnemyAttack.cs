@@ -6,6 +6,7 @@ public class EnemyAttack : MonoBehaviour
 {
     PlayerHealth target;
     [SerializeField] float damage = 40f;
+    [SerializeField] AudioSource enemyAttackSFX;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +17,7 @@ public class EnemyAttack : MonoBehaviour
     // Update is called once per frame
     public void AttackHitEvent()
     {
+        enemyAttackSFX.Play();
         if (target == null) return;
         target.TakeDamage(damage);
         Debug.Log("Bang Bang");

@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
+    public AudioSource ButtonSound;
     public bool isPaused;
     public string MainMenu;
 
@@ -34,6 +35,7 @@ public class PauseMenu : MonoBehaviour
     // Pauses the game
     public void PauseGame()
     {
+        ClickButtonSound();
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
     }
@@ -41,6 +43,7 @@ public class PauseMenu : MonoBehaviour
     // Resumes the game
     public void ResumeGame()
     {
+        ClickButtonSound();
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
     }
@@ -48,12 +51,13 @@ public class PauseMenu : MonoBehaviour
     // Loads Options Menu
     public void OptionsMenu()
     {
-
+        ClickButtonSound();
     }
 
     // Returns to Main Menu
     public void ReturnToMainMenu()
     {
+        ClickButtonSound();
         Time.timeScale = 1f;
         SceneManager.LoadScene(MainMenu);
     }
@@ -61,6 +65,18 @@ public class PauseMenu : MonoBehaviour
     // Exits out of the game
     public void QuitGame()
     {
+        ClickButtonSound();
         Application.Quit();
+    }
+
+    public void ClickButtonSound()
+    {
+        ButtonSound.Play();
+        StartCoroutine(Delay());
+    }
+
+    private IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(0.2f); // Wait for 0.2 seconds
     }
 }

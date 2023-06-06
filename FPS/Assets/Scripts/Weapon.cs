@@ -11,6 +11,8 @@ public class Weapon : MonoBehaviour
     [SerializeField] ParticleSystem muzzleFlash;
     [SerializeField] GameObject hitEffect;
     [SerializeField] Ammo ammoSlot;
+    [SerializeField] AudioSource shootSFX;
+    [SerializeField] GameObject pauseMenu;
 
     private void PlayMuzzleFlash()
     {
@@ -19,8 +21,9 @@ public class Weapon : MonoBehaviour
    
     public void Shoot()
     {
-        if (ammoSlot.GetCurrentAmmo() > 0)
+        if (ammoSlot.GetCurrentAmmo() > 0 && !pauseMenu.activeSelf)
         {
+            shootSFX.Play();
             PlayMuzzleFlash();
             ammoSlot.ReducedAmmo();
             ProcessRaycast();
