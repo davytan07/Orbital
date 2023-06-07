@@ -172,9 +172,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 56cc6e0416c68d74e98da81aed414e97, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -753,7 +753,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9ccfae45e4ba3bb41a740afd782b7818, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1049,8 +1049,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpHeight: 1.5
   sprintSpeed: 12
-  slowSpeed: 3
-  normalSpeed: 7
+  slowSpeed: 4
+  normalSpeed: 8
   walkingSFX: {fileID: 327497267334586801}
   sprintingSFX: {fileID: 4113997623772516147}
   slowWalkingSFX: {fileID: 5856393700839261338}
@@ -1111,7 +1111,7 @@ MonoBehaviour:
   fpscamera: {fileID: 7713165517349414580}
   zoomedOutFOV: 60
   zoomedInFOV: 20
-  zoomInSensitivity: 50
+  zoomInSensitivity: 15
   zoomOutSensitivity: 100
 --- !u!114 &7758567671956808643
 MonoBehaviour:
@@ -1154,7 +1154,7 @@ MonoBehaviour:
   playerStamina: 100
   maxStamina: 100
   staminaDrain: 20
-  staminaRegen: 10
+  staminaRegen: 30
   staminaProgressUI: {fileID: 0}
   sliderCanvas: {fileID: 0}
 --- !u!114 &1241617232941518511

@@ -36,7 +36,7 @@
                     "name": "Sprint",
                     "type": "PassThrough",
                     "id": "eeed76ca-c676-44b6-9293-f91612b99ab5",
-                    "expectedControlType": "Axis",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -45,6 +45,15 @@
                     "name": "WeaponZoom",
                     "type": "Button",
                     "id": "607d7b63-3c87-4c27-af12-c756dcdc9f91",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "e43803b8-b09f-4a32-83e9-ca58fa926be5",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -247,6 +256,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "WeaponZoom",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "561e1c9b-49bc-4f44-b37c-88f77500b92e",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "db26b049-a623-4485-99bc-09f39d5f85b5",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

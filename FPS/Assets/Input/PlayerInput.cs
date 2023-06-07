@@ -58,7 +58,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""name"": ""Sprint"",
                     ""type"": ""PassThrough"",
                     ""id"": ""eeed76ca-c676-44b6-9293-f91612b99ab5"",
-                    ""expectedControlType"": ""Axis"",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -67,6 +67,15 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""name"": ""WeaponZoom"",
                     ""type"": ""Button"",
                     ""id"": ""607d7b63-3c87-4c27-af12-c756dcdc9f91"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""e43803b8-b09f-4a32-83e9-ca58fa926be5"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -271,6 +280,28 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""action"": ""WeaponZoom"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""561e1c9b-49bc-4f44-b37c-88f77500b92e"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""db26b049-a623-4485-99bc-09f39d5f85b5"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -323,6 +354,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         m_Foot_Look = m_Foot.FindAction("Look", throwIfNotFound: true);
         m_Foot_Sprint = m_Foot.FindAction("Sprint", throwIfNotFound: true);
         m_Foot_WeaponZoom = m_Foot.FindAction("WeaponZoom", throwIfNotFound: true);
+        m_Foot_Pause = m_Foot.FindAction("Pause", throwIfNotFound: true);
         // Weapons
         m_Weapons = asset.FindActionMap("Weapons", throwIfNotFound: true);
         m_Weapons_Shoot = m_Weapons.FindAction("Shoot", throwIfNotFound: true);
@@ -392,6 +424,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_Foot_Look;
     private readonly InputAction m_Foot_Sprint;
     private readonly InputAction m_Foot_WeaponZoom;
+    private readonly InputAction m_Foot_Pause;
     public struct FootActions
     {
         private @PlayerInput m_Wrapper;
@@ -401,6 +434,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         public InputAction @Look => m_Wrapper.m_Foot_Look;
         public InputAction @Sprint => m_Wrapper.m_Foot_Sprint;
         public InputAction @WeaponZoom => m_Wrapper.m_Foot_WeaponZoom;
+        public InputAction @Pause => m_Wrapper.m_Foot_Pause;
         public InputActionMap Get() { return m_Wrapper.m_Foot; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -425,6 +459,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @WeaponZoom.started += instance.OnWeaponZoom;
             @WeaponZoom.performed += instance.OnWeaponZoom;
             @WeaponZoom.canceled += instance.OnWeaponZoom;
+            @Pause.started += instance.OnPause;
+            @Pause.performed += instance.OnPause;
+            @Pause.canceled += instance.OnPause;
         }
 
         private void UnregisterCallbacks(IFootActions instance)
@@ -444,6 +481,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @WeaponZoom.started -= instance.OnWeaponZoom;
             @WeaponZoom.performed -= instance.OnWeaponZoom;
             @WeaponZoom.canceled -= instance.OnWeaponZoom;
+            @Pause.started -= instance.OnPause;
+            @Pause.performed -= instance.OnPause;
+            @Pause.canceled -= instance.OnPause;
         }
 
         public void RemoveCallbacks(IFootActions instance)
@@ -514,6 +554,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         void OnLook(InputAction.CallbackContext context);
         void OnSprint(InputAction.CallbackContext context);
         void OnWeaponZoom(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
     public interface IWeaponsActions
     {

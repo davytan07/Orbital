@@ -20,8 +20,18 @@ public class MenuBGM : MonoBehaviour
 
     void Update()
     {
+        AudioSource audioSource = MenuBGM.instance.GetComponent<AudioSource>();
         if (SceneManager.GetActiveScene().name != "MainMenu"
             && SceneManager.GetActiveScene().name != "LevelSelection")
-            MenuBGM.instance.GetComponent<AudioSource>().Pause();
+        {
+            audioSource.Stop();
+        }
+        else if (SceneManager.GetActiveScene().name == "MainMenu")
+        {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+        }
     }
 }

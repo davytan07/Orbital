@@ -9,11 +9,14 @@ public class PauseMenu : MonoBehaviour
     public AudioSource ButtonSound;
     public bool isPaused;
     public string MainMenu;
+    PlayerMotor motor;
 
     // Start is called before the first frame update
     void Start()
     {
+        Cursor.visible = false;
         pauseMenu.SetActive(false);
+        motor = GetComponent<PlayerMotor>();
     }
 
     // Update is called once per frame
@@ -35,14 +38,22 @@ public class PauseMenu : MonoBehaviour
     // Pauses the game
     public void PauseGame()
     {
-        ClickButtonSound();
+        motor.gameEnabled = false;
+        motor.MuteMovement();
+        // AudioListener.volume = 0f;
+        Cursor.visible = true;
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
+        ClickButtonSound();
+        // Debug.Log(motor.gameEnabled);
     }
 
     // Resumes the game
     public void ResumeGame()
     {
+        motor.gameEnabled = true;
+        // AudioListener.volume = 1f;
+        Cursor.visible = false;
         ClickButtonSound();
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;

@@ -23,13 +23,14 @@ public class PlayerMotor : MonoBehaviour
     [SerializeField] private AudioSource sprintingSFX;
     [SerializeField] private AudioSource slowWalkingSFX;
     [SerializeField] private AudioSource jumpSFX;
-    private AudioSource currMovementSFX;
+    public bool gameEnabled;
 
     // Start is called before the first frame update
     void Start()
     {
         controller = GetComponent<CharacterController>();
         staminaBar = GetComponent<StaminaBar>();
+        gameEnabled = true;
     }
 
     // Update is called once per frame
@@ -40,24 +41,23 @@ public class PlayerMotor : MonoBehaviour
 
     public void ProcessMove(Vector2 input, bool isKeyHeld)
     {
-        if (isKeyHeld && hasRegenerated)
+        if (isKeyHeld && hasRegenerated && !hasInput(input)) // prevents sprinting on the spot
         {
-            currMovementSFX = sprintingSFX;
             Sprint();
         }
         else if (!isKeyHeld && hasRegenerated)
         {
-            currMovementSFX = walkingSFX;
+            sprintingSFX.Play();
             speed = normalSpeed;
             staminaBar.RegenStamina();
         }
         else
         {   
-            currMovementSFX = slowWalkingSFX;
             speed = slowSpeed;
             staminaBar.RegenStamina();
             if (staminaBar.fullStamina())
             {
+                MuteMovement();
                 hasRegenerated = true;
             }
 
@@ -75,8 +75,9 @@ public class PlayerMotor : MonoBehaviour
 
     public void Jump()
     {
-        if (isGrounded)
+        if (isGrounded && gameEnabled)
         {
+            MuteMovement();
             jumpSFX.Play();
             playerVelocity.y = Mathf.Sqrt(jumpHeight * -3.0f * gravity);
         }
@@ -88,7 +89,23 @@ public class PlayerMotor : MonoBehaviour
         staminaBar.DrainStamina();
         if (staminaBar.zeroStamina())
         {
+            MuteMovement();
+            slowWalkingSFX.Play();
             hasRegenerated = false;
         }
+    }
+
+    public void MuteMovement()
+    {
+        slowWalkingSFX.Pause();
+        sprintingSFX.Pause();
+    }
+
+    // Helper function to check if there is any movement input before sprinting
+    public bool hasInput(Vector2 input)
+    {
+        // Debug.Log(input.x);
+        // Debug.Log(input.y);
+        return input.x == 0 && input.y == 0;
     }
 }

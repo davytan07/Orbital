@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public string LevelSelection;
+    public string OptionsMenu;
     public AudioSource ButtonSound;
 
     // Start is called before the first frame update
@@ -28,9 +29,10 @@ public class MainMenu : MonoBehaviour
     }
 
     // Loads Options Menu
-    public void OptionsMenu()
+    public void OpenOptionsMenu()
     {
         ClickButtonSound();
+        SceneManager.LoadScene("OptionsMenu");
     }
 
     // Exits out of the game

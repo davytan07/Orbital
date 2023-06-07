@@ -1033,10 +1033,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 964801152}
     - target: {fileID: 2068210374094836339, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
-      propertyPath: DeathSFX
-      value: 
-      objectReference: {fileID: 585123337}
-    - target: {fileID: 2068210374094836339, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
       propertyPath: gameOverCanvas
       value: 
       objectReference: {fileID: 8840630896312679282}
@@ -1118,11 +1114,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
---- !u!82 &585123337 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 6559585996274333377, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
-  m_PrefabInstance: {fileID: 585123336}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &585123351 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7713165518996794835, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
