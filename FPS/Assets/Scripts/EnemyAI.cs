@@ -71,7 +71,7 @@ public class EnemyAI : MonoBehaviour
     {
         GetComponent<Animator>().SetBool("Walk Forward", false);
         GetComponent<Animator>().SetTrigger("Stab Attack");
-        Debug.Log(name + "has seeked and is destroying" + target.name);
+        Debug.Log(name + " has seeked and is destroying" + target.name);
     }
 
     private void FaceTarget()

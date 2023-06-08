@@ -11,6 +11,8 @@ public class PlayerMotor : MonoBehaviour
     private float gravity = -9.8f;
     private float groundedForce = -2f;
     public float jumpHeight = 2f;
+    public bool gameEnabled;
+    public bool jumpEnabled;
 
 
     [Header("Stamina Speed Parameters")]
@@ -23,7 +25,6 @@ public class PlayerMotor : MonoBehaviour
     [SerializeField] private AudioSource sprintingSFX;
     [SerializeField] private AudioSource slowWalkingSFX;
     [SerializeField] private AudioSource jumpSFX;
-    public bool gameEnabled;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,7 @@ public class PlayerMotor : MonoBehaviour
         controller = GetComponent<CharacterController>();
         staminaBar = GetComponent<StaminaBar>();
         gameEnabled = true;
+        jumpEnabled = true;
     }
 
     // Update is called once per frame
@@ -41,8 +43,17 @@ public class PlayerMotor : MonoBehaviour
 
     public void ProcessMove(Vector2 input, bool isKeyHeld)
     {
-        if (isKeyHeld && hasRegenerated && !hasInput(input)) // prevents sprinting on the spot
+        if (isKeyHeld && hasRegenerated && !hasNoInput(input)) // prevents sprinting on the spot
         {
+            // if player is constantly holding sprint key, ensures that sprint sound still plays
+            if (!sprintingSFX.isPlaying)
+            {
+                sprintingSFX.Play();
+            }
+            if (!isGrounded) // Stops sprinting sound if player is in the air
+            {
+                sprintingSFX.Stop();
+            }
             Sprint();
         }
         else if (!isKeyHeld && hasRegenerated)
@@ -59,6 +70,10 @@ public class PlayerMotor : MonoBehaviour
             {
                 MuteMovement();
                 hasRegenerated = true;
+                if (!jumpEnabled)
+                {
+                    jumpEnabled = true;
+                }
             }
 
         }
@@ -75,9 +90,8 @@ public class PlayerMotor : MonoBehaviour
 
     public void Jump()
     {
-        if (isGrounded && gameEnabled)
+        if (isGrounded && gameEnabled && jumpEnabled)
         {
-            MuteMovement();
             jumpSFX.Play();
             playerVelocity.y = Mathf.Sqrt(jumpHeight * -3.0f * gravity);
         }
@@ -92,6 +106,7 @@ public class PlayerMotor : MonoBehaviour
             MuteMovement();
             slowWalkingSFX.Play();
             hasRegenerated = false;
+            jumpEnabled = false;
         }
     }
 
@@ -102,7 +117,7 @@ public class PlayerMotor : MonoBehaviour
     }
 
     // Helper function to check if there is any movement input before sprinting
-    public bool hasInput(Vector2 input)
+    public bool hasNoInput(Vector2 input)
     {
         // Debug.Log(input.x);
         // Debug.Log(input.y);

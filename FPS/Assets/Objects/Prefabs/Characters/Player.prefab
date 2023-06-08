@@ -1048,6 +1048,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpHeight: 1.5
+  gameEnabled: 0
+  jumpEnabled: 0
   sprintSpeed: 12
   slowSpeed: 4
   normalSpeed: 8
@@ -1154,7 +1156,7 @@ MonoBehaviour:
   playerStamina: 100
   maxStamina: 100
   staminaDrain: 20
-  staminaRegen: 30
+  staminaRegen: 25
   staminaProgressUI: {fileID: 0}
   sliderCanvas: {fileID: 0}
 --- !u!114 &1241617232941518511
