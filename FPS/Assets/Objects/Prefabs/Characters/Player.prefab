@@ -943,6 +943,7 @@ GameObject:
   - component: {fileID: 266835242082348980}
   - component: {fileID: 4466476559392085392}
   - component: {fileID: 1241617232941518511}
+  - component: {fileID: 1773255966623615735}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1141,6 +1142,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 100
+  maxHealth: 100
+  healthProgressUI: {fileID: 0}
+  healthSliderCanvas: {fileID: 0}
 --- !u!114 &4466476559392085392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1175,6 +1179,20 @@ MonoBehaviour:
   ButtonSound: {fileID: 0}
   isPaused: 0
   MainMenu: MainMenu
+--- !u!114 &1773255966623615735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7713165518996794839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e341d2d91bdff44e8ba28a32b25256a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactCanvas: {fileID: 0}
+  impactTime: 0.3
 --- !u!1001 &5528582280430544601
 PrefabInstance:
   m_ObjectHideFlags: 0
