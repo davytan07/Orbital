@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AmmoPickup : MonoBehaviour
 {
-    [SerializeField] int ammoAmount = 5;
+    //[SerializeField] int ammoAmount = 5;
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
