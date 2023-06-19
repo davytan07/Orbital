@@ -1502,7 +1502,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6024356373531861194, guid: ffa72e981e71ce942bc485f7d68394d8, type: 3}
       propertyPath: m_text
-      value: kent ridge
+      value: pgp
       objectReference: {fileID: 0}
     - target: {fileID: 6024356373635699524, guid: ffa72e981e71ce942bc485f7d68394d8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1550,7 +1550,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6024356373635699526, guid: ffa72e981e71ce942bc485f7d68394d8, type: 3}
       propertyPath: m_Name
-      value: Kent Ridge
+      value: PGP
       objectReference: {fileID: 0}
     - target: {fileID: 6024356373635699527, guid: ffa72e981e71ce942bc485f7d68394d8, type: 3}
       propertyPath: m_Pivot.x
