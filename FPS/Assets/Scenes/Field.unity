@@ -1009,6 +1009,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}
+--- !u!223 &1297642915 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 8447643956916969507, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}
+  m_PrefabInstance: {fileID: 1297642914}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1297642916 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7340988173543930437, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}
@@ -1023,6 +1028,22 @@ MonoBehaviour:
 --- !u!225 &1297642917 stripped
 CanvasGroup:
   m_CorrespondingSourceObject: {fileID: 4856545545537010562, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}
+  m_PrefabInstance: {fileID: 1297642914}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1297642918 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4330435124983350812, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}
+  m_PrefabInstance: {fileID: 1297642914}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!225 &1297642919 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 1917773016206477275, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}
   m_PrefabInstance: {fileID: 1297642914}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1315870265
@@ -13172,6 +13193,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 266835242082348980, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
+      propertyPath: healthProgressUI
+      value: 
+      objectReference: {fileID: 1297642918}
+    - target: {fileID: 266835242082348980, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
+      propertyPath: healthSliderCanvas
+      value: 
+      objectReference: {fileID: 1297642919}
     - target: {fileID: 1241617232941518511, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
       propertyPath: pauseMenu
       value: 
@@ -13180,6 +13209,10 @@ PrefabInstance:
       propertyPath: ButtonSound
       value: 
       objectReference: {fileID: 740287906}
+    - target: {fileID: 1773255966623615735, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
+      propertyPath: impactCanvas
+      value: 
+      objectReference: {fileID: 1297642915}
     - target: {fileID: 2068210374094836339, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
       propertyPath: gameOverCanvas
       value: 

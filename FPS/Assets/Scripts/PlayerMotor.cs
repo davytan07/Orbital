@@ -58,7 +58,7 @@ public class PlayerMotor : MonoBehaviour
         }
         else if (!isKeyHeld && hasRegenerated)
         {
-            sprintingSFX.Play();
+            sprintingSFX.Play(); // tried to remove this line...
             speed = normalSpeed;
             staminaBar.RegenStamina();
         }

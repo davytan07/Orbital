@@ -620,6 +620,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2369ab1effe4b514aa796df6badc662a, type: 3}
   m_PrefabInstance: {fileID: 369048939}
   m_PrefabAsset: {fileID: 0}
+--- !u!223 &375894008 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 8447643956916969507, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}
+  m_PrefabInstance: {fileID: 2811255175438932147}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &415518124
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -938,6 +943,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2369ab1effe4b514aa796df6badc662a, type: 3}
   m_PrefabInstance: {fileID: 1107966021}
   m_PrefabAsset: {fileID: 0}
+--- !u!225 &540493311 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 1917773016206477275, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}
+  m_PrefabInstance: {fileID: 2811255175438932147}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &565295216 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2369ab1effe4b514aa796df6badc662a, type: 3}
@@ -1020,6 +1030,14 @@ PrefabInstance:
       propertyPath: sprinting
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 266835242082348980, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
+      propertyPath: healthProgressUI
+      value: 
+      objectReference: {fileID: 1110332408}
+    - target: {fileID: 266835242082348980, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
+      propertyPath: healthSliderCanvas
+      value: 
+      objectReference: {fileID: 540493311}
     - target: {fileID: 327497267334586801, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
@@ -1032,6 +1050,10 @@ PrefabInstance:
       propertyPath: ButtonSound
       value: 
       objectReference: {fileID: 964801152}
+    - target: {fileID: 1773255966623615735, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
+      propertyPath: impactCanvas
+      value: 
+      objectReference: {fileID: 375894008}
     - target: {fileID: 2068210374094836339, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
       propertyPath: gameOverCanvas
       value: 
@@ -1108,6 +1130,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7713165518996794837, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b53db866d7c1078418db1d0a107ee039, type: 2}
     - target: {fileID: 7713165518996794839, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2050,6 +2076,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2369ab1effe4b514aa796df6badc662a, type: 3}
+--- !u!114 &1110332408 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4330435124983350812, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}
+  m_PrefabInstance: {fileID: 2811255175438932147}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1113546153 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7455389212746350286, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}
