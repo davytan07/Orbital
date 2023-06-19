@@ -6,9 +6,21 @@ public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] float hitPoints = 100f;
     [SerializeField] AudioSource EnemyDeath;
+    [SerializeField] WaveSpawner enemyCount;
+    GameObject wavespawn;
+
+    private float timeToFade = 3f;
 
     bool isDead = false;
 
+    private void Start()
+    {
+        wavespawn = GameObject.FindWithTag("Spawner");
+        if (wavespawn != null)
+        {
+            enemyCount = wavespawn.GetComponent<WaveSpawner>();
+        }
+    }
     public bool IsDead()
     {
         return isDead;
@@ -34,7 +46,11 @@ public class EnemyHealth : MonoBehaviour
         EnemyDeath.Play();
         isDead = true;
         GetComponent<Animator>().SetTrigger("Die");
+        Destroy(gameObject, timeToFade);
+        enemyCount.totalEnemiesPresent -= 1;
     }
+
+    
 
 
 }

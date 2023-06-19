@@ -13,10 +13,16 @@ public class EnemyAI : MonoBehaviour
     float turnSpeed = 5f;
     EnemyHealth health;
     [SerializeField] AudioSource enemyCrawlSFX;
+    GameObject player;
 
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.FindWithTag("Player");
+        if (player != null)
+        {
+            target = player.transform;
+        }
         navMeshAgent = GetComponent<NavMeshAgent>();
         health = GetComponent<EnemyHealth>();
     }
