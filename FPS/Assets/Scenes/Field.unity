@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -541,7 +541,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
@@ -1640,7 +1640,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3cb941858c0bd2f4eb42e50b3af1e43d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 41b2dc45d401b5947b3f7deb18de1259, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -13434,6 +13434,10 @@ PrefabInstance:
       propertyPath: healthSliderCanvas
       value: 
       objectReference: {fileID: 1297642919}
+    - target: {fileID: 1241617232941518511, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
+      propertyPath: bgMusic
+      value: 
+      objectReference: {fileID: 1606665264}
     - target: {fileID: 1241617232941518511, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
       propertyPath: pauseMenu
       value: 

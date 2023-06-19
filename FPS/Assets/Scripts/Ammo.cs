@@ -13,6 +13,7 @@ public class Ammo : MonoBehaviour
 
     public void ReducedAmmo()
     {
-        ammoAmount--;
+        // ammoAmount--;
+        return;
     }
 }

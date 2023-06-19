@@ -6,7 +6,10 @@ public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] float hitPoints = 100f;
     [SerializeField] AudioSource EnemyDeath;
+    [SerializeField] AudioSource EnemyNoise;
     [SerializeField] WaveSpawner enemyCount;
+    GameObject player;
+    PauseMenu pm;
     GameObject wavespawn;
 
     private float timeToFade = 3f;
@@ -15,11 +18,35 @@ public class EnemyHealth : MonoBehaviour
 
     private void Start()
     {
+        EnemyNoise.Play();
+        
         wavespawn = GameObject.FindWithTag("Spawner");
         if (wavespawn != null)
         {
             enemyCount = wavespawn.GetComponent<WaveSpawner>();
         }
+
+        player = GameObject.FindWithTag("Player");
+        if (player != null)
+        {
+            pm = player.GetComponent<PauseMenu>();
+        }
+    }
+
+    private void Update() 
+    {
+        if (EnemyNoise.isPlaying)
+        {
+            Debug.Log(pm.isPaused);
+            if (pm.isPaused)
+            {
+                EnemyNoise.Pause();
+            }
+            else
+            {
+                EnemyNoise.UnPause();
+            }
+        }            
     }
     public bool IsDead()
     {
@@ -43,7 +70,9 @@ public class EnemyHealth : MonoBehaviour
     private void Die()
     {
         if (isDead) return;
+        
         EnemyDeath.Play();
+        EnemyNoise.Stop();
         isDead = true;
         GetComponent<Animator>().SetTrigger("Die");
         Destroy(gameObject, timeToFade);

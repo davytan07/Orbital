@@ -10,6 +10,7 @@ public class PauseMenu : MonoBehaviour
     public bool isPaused;
     public string MainMenu;
     PlayerMotor motor;
+    [SerializeField] AudioSource bgMusic;
 
     // Start is called before the first frame update
     void Start()
@@ -38,11 +39,13 @@ public class PauseMenu : MonoBehaviour
     // Pauses the game
     public void PauseGame()
     {
+        bgMusic.Pause();
         motor.gameEnabled = false;
         motor.MuteMovement();
         // AudioListener.volume = 0f;
         Cursor.visible = true;
         pauseMenu.SetActive(true);
+        isPaused = true;
         Time.timeScale = 0f;
         ClickButtonSound();
         // Debug.Log(motor.gameEnabled);
@@ -51,11 +54,13 @@ public class PauseMenu : MonoBehaviour
     // Resumes the game
     public void ResumeGame()
     {
+        bgMusic.Play();
         motor.gameEnabled = true;
         // AudioListener.volume = 1f;
         Cursor.visible = false;
         ClickButtonSound();
         pauseMenu.SetActive(false);
+        isPaused = false;
         Time.timeScale = 1f;
     }
 

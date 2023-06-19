@@ -771,7 +771,7 @@ GameObject:
   - component: {fileID: 6751933068144049181}
   m_Layer: 0
   m_Name: UI
-  m_TagString: Untagged
+  m_TagString: UI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1501,6 +1501,10 @@ PrefabInstance:
     - target: {fileID: 6707811557285098383, guid: 8c1b3a474a5c441db954c383d1ed60a9, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6707811557285098383, guid: 8c1b3a474a5c441db954c383d1ed60a9, type: 3}
+      propertyPath: m_TagString
+      value: PauseMenu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c1b3a474a5c441db954c383d1ed60a9, type: 3}

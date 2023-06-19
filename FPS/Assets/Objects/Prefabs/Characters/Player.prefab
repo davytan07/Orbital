@@ -1051,9 +1051,9 @@ MonoBehaviour:
   jumpHeight: 1.5
   gameEnabled: 0
   jumpEnabled: 0
-  sprintSpeed: 12
-  slowSpeed: 4
-  normalSpeed: 8
+  sprintSpeed: 13
+  slowSpeed: 5
+  normalSpeed: 10
   walkingSFX: {fileID: 327497267334586801}
   sprintingSFX: {fileID: 4113997623772516147}
   slowWalkingSFX: {fileID: 5856393700839261338}

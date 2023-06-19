@@ -43,39 +43,47 @@ public class PlayerMotor : MonoBehaviour
 
     public void ProcessMove(Vector2 input, bool isKeyHeld)
     {
-        if (isKeyHeld && hasRegenerated && !hasNoInput(input)) // prevents sprinting on the spot
+        if (!hasNoInput(input))
         {
-            // if player is constantly holding sprint key, ensures that sprint sound still plays
-            if (!sprintingSFX.isPlaying)
+            if (isKeyHeld && hasRegenerated) // prevents sprinting on the spot
             {
-                sprintingSFX.Play();
+                // if player is constantly holding sprint key, ensures that sprint sound still plays
+                if (!sprintingSFX.isPlaying)
+                {
+                    sprintingSFX.Play();
+                }
+                if (!isGrounded) // Stops sprinting sound if player is in the air
+                {
+                    sprintingSFX.Stop();
+                }
+                Sprint();
             }
-            if (!isGrounded) // Stops sprinting sound if player is in the air
+            else if (!isKeyHeld && hasRegenerated) // still stamina left
             {
+                // sprintingSFX.Play(); // tried to remove this line...
                 sprintingSFX.Stop();
+                speed = normalSpeed;
+                staminaBar.RegenStamina();
             }
-            Sprint();
-        }
-        else if (!isKeyHeld && hasRegenerated)
-        {
-            sprintingSFX.Play(); // tried to remove this line...
-            speed = normalSpeed;
-            staminaBar.RegenStamina();
+            else // ran out of stamina
+            {   
+                speed = slowSpeed;
+                staminaBar.RegenStamina();
+                if (staminaBar.fullStamina())
+                {
+                    MuteMovement();
+                    hasRegenerated = true;
+                    if (!jumpEnabled)
+                    {
+                        jumpEnabled = true;
+                    }
+                }
+            }            
         }
         else
-        {   
-            speed = slowSpeed;
+        {
             staminaBar.RegenStamina();
-            if (staminaBar.fullStamina())
-            {
-                MuteMovement();
-                hasRegenerated = true;
-                if (!jumpEnabled)
-                {
-                    jumpEnabled = true;
-                }
-            }
-
+            sprintingSFX.Stop();
         }
         Vector3 moveDirection = Vector3.zero;
         moveDirection.x = input.x;
