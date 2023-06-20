@@ -172,7 +172,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e281488f907e03741b568593c4be62f4, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.8
+  m_Volume: 0.9
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -463,7 +463,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1a341d9ae1bad4d4c8a72c8e1cc1c0d7, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2ab45368685bece42921277b244d7d54, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -753,7 +753,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9ccfae45e4ba3bb41a740afd782b7818, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.4
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1051,7 +1051,7 @@ MonoBehaviour:
   jumpHeight: 1.5
   gameEnabled: 0
   jumpEnabled: 0
-  sprintSpeed: 13
+  sprintSpeed: 14
   slowSpeed: 5
   normalSpeed: 10
   walkingSFX: {fileID: 327497267334586801}
@@ -1179,6 +1179,7 @@ MonoBehaviour:
   ButtonSound: {fileID: 0}
   isPaused: 0
   MainMenu: MainMenu
+  bgMusic: {fileID: 0}
 --- !u!114 &1773255966623615735
 MonoBehaviour:
   m_ObjectHideFlags: 0
