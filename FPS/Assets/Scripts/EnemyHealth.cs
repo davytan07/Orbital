@@ -37,7 +37,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if (EnemyNoise.isPlaying)
         {
-            Debug.Log(pm.isPaused);
+            // Debug.Log(pm.isPaused);
             if (pm.isPaused)
             {
                 EnemyNoise.Pause();

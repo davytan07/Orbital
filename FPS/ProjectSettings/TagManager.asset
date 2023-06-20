@@ -9,6 +9,9 @@ TagManager:
   - PauseMenu
   - UI
   - BackgroundMusic
+  - Fullscreen
+  - Volume
+  - Sens
   layers:
   - Default
   - TransparentFX
