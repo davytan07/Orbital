@@ -35,7 +35,7 @@ public class OptionsMenu : MonoBehaviour
     {
         Debug.Log("resetted");
         fullscreenToggle.enabled = true;
-        volumeSlider.value = 0.75f;
+        volumeSlider.value = 1f;
         sensSlider.value = 50f;
     }
 }

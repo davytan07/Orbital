@@ -29,7 +29,7 @@ public class MainMenu : MonoBehaviour
     }
 
     // Loads Options Menu
-    public void OpenOptionsMenu()
+    public void OpenControls()
     {
         ClickButtonSound();
         SceneManager.LoadScene("OptionsMenu");

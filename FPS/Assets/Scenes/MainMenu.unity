@@ -504,7 +504,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5245519382107392748, guid: 4bb04799295a4834c87807e815130516, type: 3}
       propertyPath: m_Name
-      value: Options
+      value: Controls
       objectReference: {fileID: 0}
     - target: {fileID: 5245519382107392749, guid: 4bb04799295a4834c87807e815130516, type: 3}
       propertyPath: m_Pivot.x
@@ -598,9 +598,13 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 95812309}
+    - target: {fileID: 5245519382107392750, guid: 4bb04799295a4834c87807e815130516, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenControls
+      objectReference: {fileID: 0}
     - target: {fileID: 5245519382337075552, guid: 4bb04799295a4834c87807e815130516, type: 3}
       propertyPath: m_text
-      value: Options
+      value: controls
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
