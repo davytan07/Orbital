@@ -944,6 +944,7 @@ GameObject:
   - component: {fileID: 4466476559392085392}
   - component: {fileID: 1241617232941518511}
   - component: {fileID: 1773255966623615735}
+  - component: {fileID: 7770472369895633991}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1194,6 +1195,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   impactCanvas: {fileID: 0}
   impactTime: 0.3
+--- !u!114 &7770472369895633991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7713165518996794839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4779987edfb817e49baef978f59754fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsFromSpider: 100
+  scoreText: {fileID: 0}
 --- !u!1001 &5528582280430544601
 PrefabInstance:
   m_ObjectHideFlags: 0

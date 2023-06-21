@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 4807590340108055132}
   - component: {fileID: 2236018225316075990}
   m_Layer: 0
-  m_Name: Score
+  m_Name: literally 'score text'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -249,7 +249,7 @@ GameObject:
   - component: {fileID: 1720642385369295650}
   - component: {fileID: 3953913143474790646}
   m_Layer: 0
-  m_Name: Points
+  m_Name: Points text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

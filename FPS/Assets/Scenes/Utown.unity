@@ -1446,6 +1446,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7770472369895633991, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 149044861}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
 --- !u!114 &585123337 stripped
@@ -1453,7 +1457,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 389742665, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
   m_PrefabInstance: {fileID: 585123336}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1908898648}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d85ad1523571124dbe3ca83ec6ec595, type: 3}
@@ -3759,11 +3763,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1902147415}
   m_CullTransparentMesh: 1
---- !u!1 &1908898648 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7713165518996794839, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
-  m_PrefabInstance: {fileID: 585123336}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1927091961
 GameObject:
   m_ObjectHideFlags: 0
@@ -4044,27 +4043,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1241617232941518511, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
   m_PrefabInstance: {fileID: 585123336}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1908898648}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6be647b7cbfb24ff9823930f2585914e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2001353195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1908898648}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4779987edfb817e49baef978f59754fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currPoints: 0
-  pointsFromSpider: 100
-  scoreText: {fileID: 149044861}
 --- !u!1 &2012840505
 GameObject:
   m_ObjectHideFlags: 0
