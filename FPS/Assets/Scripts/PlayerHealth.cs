@@ -23,6 +23,15 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    public void RecoverHealth(float health)
+    {
+        hitPoints += health;
+        UpdateHealth();
+        if (hitPoints >= 100)
+        {
+            hitPoints = 100;
+        }
+    }
     public void UpdateHealth()
     {
         healthProgressUI.fillAmount = hitPoints / maxHealth;

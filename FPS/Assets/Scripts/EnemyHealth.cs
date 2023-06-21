@@ -11,7 +11,8 @@ public class EnemyHealth : MonoBehaviour
     GameObject player;
     PauseMenu pm;
     GameObject wavespawn;
-
+    PointsSystem points;
+    SphereCollider m_collider;
     private float timeToFade = 3f;
 
     bool isDead = false;
@@ -19,7 +20,7 @@ public class EnemyHealth : MonoBehaviour
     private void Start()
     {
         EnemyNoise.Play();
-        
+        m_collider = GetComponent<SphereCollider>();
         wavespawn = GameObject.FindWithTag("Spawner");
         if (wavespawn != null)
         {
@@ -29,6 +30,7 @@ public class EnemyHealth : MonoBehaviour
         player = GameObject.FindWithTag("Player");
         if (player != null)
         {
+            points = player.GetComponent<PointsSystem>();
             pm = player.GetComponent<PauseMenu>();
         }
     }
@@ -64,6 +66,7 @@ public class EnemyHealth : MonoBehaviour
         if (hitPoints <= 0)
         {
             Die();
+            points.AddPoints();
         }
     }
 
@@ -75,6 +78,7 @@ public class EnemyHealth : MonoBehaviour
         EnemyNoise.Stop();
         isDead = true;
         GetComponent<Animator>().SetTrigger("Die");
+        m_collider.enabled = false;
         Destroy(gameObject, timeToFade);
         enemyCount.totalEnemiesPresent -= 1;
     }
