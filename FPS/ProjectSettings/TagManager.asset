@@ -12,6 +12,7 @@ TagManager:
   - Fullscreen
   - Volume
   - Sens
+  - Pickup
   layers:
   - Default
   - TransparentFX

@@ -5,6 +5,7 @@ using UnityEngine;
 public class WaveSpawner : MonoBehaviour
 {
     public List<Enemy> enemies = new List<Enemy>();
+    public HealthPickup pickup;
     [SerializeField] private int currWave;
     private int waveValue;
     public List<GameObject> enemiesToSpawn = new List<GameObject>();
@@ -17,6 +18,7 @@ public class WaveSpawner : MonoBehaviour
     private float spawnInterval;
     private float spawnTimer;
     public int totalEnemiesPresent = 0;
+    public int currNumOfPickups = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -127,6 +129,15 @@ public class WaveSpawner : MonoBehaviour
         }
     }
 
+    public void SpawnPickup(Vector3 position)
+    {
+        if (currNumOfPickups < 6 && Random.Range(0,5) == 2)
+        {
+            Vector3 new_position = position + Vector3.up;
+            Instantiate(pickup, new_position, Quaternion.identity);
+            currNumOfPickups += 1;
+        }
+    }
 
 }
 

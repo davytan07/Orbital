@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PointsSystem : MonoBehaviour
 {
-    public int currPoints = 0;
+    private int currPoints = 0;
     [SerializeField] private int pointsFromSpider = 100;
     [SerializeField] Text scoreText;
 
@@ -17,7 +17,7 @@ public class PointsSystem : MonoBehaviour
         scoreText.text = currPoints.ToString();
     }
 
-    private int CurrentPoints()
+    public int CurrentPoints()
     {
         return currPoints;
     }

@@ -79,8 +79,9 @@ public class EnemyHealth : MonoBehaviour
         isDead = true;
         GetComponent<Animator>().SetTrigger("Die");
         m_collider.enabled = false;
-        Destroy(gameObject, timeToFade);
         enemyCount.totalEnemiesPresent -= 1;
+        enemyCount.SpawnPickup(transform.position);
+        Destroy(gameObject, timeToFade);
     }
 
     
