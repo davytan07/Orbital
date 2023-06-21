@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -741,6 +741,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaveSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 5729142289535358841, guid: 508fd7519360d8042aab7ba8b70494c4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5729142289535358842, guid: 508fd7519360d8042aab7ba8b70494c4, type: 3}
       propertyPath: spawnPoints.Array.size
       value: 10
@@ -1304,6 +1308,18 @@ PrefabInstance:
     - target: {fileID: 7455389212746350286, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680212218142244869, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680212218142244869, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680212218142244869, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.r
+      value: 0.8784314
       objectReference: {fileID: 0}
     - target: {fileID: 8049758526863059018, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}
       propertyPath: m_AnchorMax.x

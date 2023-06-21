@@ -10,7 +10,7 @@ public class InputManager : MonoBehaviour
     private PlayerMotor motor;
     private PlayerLook look;
     private WeaponZoom zoom;
-
+    private PauseMenu pauseMenu;
 
     void Awake()
     {
@@ -20,10 +20,13 @@ public class InputManager : MonoBehaviour
         motor = GetComponent<PlayerMotor>();
         look = GetComponent<PlayerLook>();
         zoom = GetComponent<WeaponZoom>();
+        pauseMenu = GetComponent<PauseMenu>();
 
         foot.Jump.performed += ctx => motor.Jump();
         foot.WeaponZoom.performed += ctx => zoom.ProcessZoom();
+        foot.Pause.performed += ctx => pauseMenu.TogglePause();
     }
+    
     void FixedUpdate()
     {
         motor.ProcessMove(foot.Movement.ReadValue<Vector2>(), foot.Sprint.ReadValue<float>() > 0.1f );

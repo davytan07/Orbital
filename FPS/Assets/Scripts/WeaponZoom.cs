@@ -10,8 +10,6 @@ public class WeaponZoom : MonoBehaviour
 
     bool zoomedInToggle = false;
     PlayerLook playerLook;
-    public float zoomInSensitivity = 50f;
-    public float zoomOutSensitivity = 100f;
 
     private void Start()
     {
@@ -25,16 +23,15 @@ public class WeaponZoom : MonoBehaviour
         {
             zoomedInToggle = true;
             fpscamera.fieldOfView = zoomedInFOV;
-            playerLook.xSensitivity = zoomInSensitivity;
-            playerLook.ySensitivity = zoomInSensitivity;
+            playerLook.xSensitivity /= 3;
+            playerLook.ySensitivity /= 3;
         }
         else
         {
             zoomedInToggle = false;
             fpscamera.fieldOfView = zoomedOutFOV;
-            playerLook.xSensitivity = zoomOutSensitivity;
-            playerLook.ySensitivity = zoomOutSensitivity;
-        }
-        
+            playerLook.xSensitivity *= 3;
+            playerLook.ySensitivity *= 3;
+        }        
     }
 }

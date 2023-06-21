@@ -20,19 +20,15 @@ public class PauseMenu : MonoBehaviour
         motor = GetComponent<PlayerMotor>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void TogglePause()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (isPaused)
         {
-            if (isPaused)
-            {
-                ResumeGame();
-            }
-            else
-            {
-                PauseGame();
-            }
+            ResumeGame();
+        }
+        else
+        {
+            PauseGame();
         }
     }
 
