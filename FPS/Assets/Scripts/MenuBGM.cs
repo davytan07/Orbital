@@ -22,7 +22,8 @@ public class MenuBGM : MonoBehaviour
     {
         AudioSource audioSource = MenuBGM.instance.GetComponent<AudioSource>();
         if (SceneManager.GetActiveScene().name != "MainMenu"
-            && SceneManager.GetActiveScene().name != "LevelSelection")
+            && SceneManager.GetActiveScene().name != "LevelSelection"
+            && SceneManager.GetActiveScene().name != "Controls")
         {
             audioSource.Stop();
         }

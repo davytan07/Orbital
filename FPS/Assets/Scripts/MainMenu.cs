@@ -32,7 +32,7 @@ public class MainMenu : MonoBehaviour
     public void OpenControls()
     {
         ClickButtonSound();
-        SceneManager.LoadScene("OptionsMenu");
+        SceneManager.LoadScene("Controls");
     }
 
     // Exits out of the game
