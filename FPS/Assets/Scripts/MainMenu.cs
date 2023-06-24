@@ -42,6 +42,13 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
+    // Loads mystery scene
+    public void OpenMysteryScene()
+    {
+        ClickButtonSound();
+        SceneManager.LoadScene("SpecialScene");
+    }
+
     public void ClickButtonSound()
     {
         ButtonSound.Play();

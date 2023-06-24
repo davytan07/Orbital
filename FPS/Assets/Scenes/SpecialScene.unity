@@ -651,6 +651,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bb04799295a4834c87807e815130516, type: 3}
+--- !u!1 &425105693 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5245519382107392748, guid: 4bb04799295a4834c87807e815130516, type: 3}
+  m_PrefabInstance: {fileID: 425105692}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &445352282
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,7 +668,7 @@ GameObject:
   - component: {fileID: 445352285}
   - component: {fileID: 445352284}
   m_Layer: 5
-  m_Name: WIP
+  m_Name: KRorbital
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -686,7 +691,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 140, y: 327}
+  m_AnchoredPosition: {x: 142, y: 368}
   m_SizeDelta: {x: 905.93, y: 274.502}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &445352284
@@ -709,7 +714,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: sorry, work in progress!
+  m_text: 'this game was brought to
+
+    you by KRorbital'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ffe53f2ff645cc4daa7b8e0b39d86f3, type: 2}
   m_sharedMaterial: {fileID: 7868835476617041976, guid: 9ffe53f2ff645cc4daa7b8e0b39d86f3, type: 2}
@@ -1168,7 +1175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 425105693}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &1964392746
@@ -1244,7 +1251,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Options
+  m_text: credits
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ffe53f2ff645cc4daa7b8e0b39d86f3, type: 2}
   m_sharedMaterial: {fileID: 7868835476617041976, guid: 9ffe53f2ff645cc4daa7b8e0b39d86f3, type: 2}

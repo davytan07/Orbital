@@ -6863,14 +6863,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4192635454990945524, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -785
-      objectReference: {fileID: 0}
-    - target: {fileID: 4192635454990945524, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 262
-      objectReference: {fileID: 0}
     - target: {fileID: 5268019012384715637, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -6884,29 +6876,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 585123337}
     - target: {fileID: 5974777112486710437, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}
-      propertyPath: m_text
-      value: 'CAP:'
-      objectReference: {fileID: 0}
-    - target: {fileID: 5974777112486710437, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}
-      propertyPath: m_fontSize
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 5974777112486710437, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}
       propertyPath: m_margin.z
       value: 99.381256
       objectReference: {fileID: 0}
     - target: {fileID: 5974777112486710437, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 9ffe53f2ff645cc4daa7b8e0b39d86f3, type: 2}
-    - target: {fileID: 5974777112486710437, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}
       propertyPath: m_fontSizeBase
       value: 50
       objectReference: {fileID: 0}
-    - target: {fileID: 5974777112486710437, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 7868835476617041976, guid: 9ffe53f2ff645cc4daa7b8e0b39d86f3, type: 2}
     - target: {fileID: 6751933068144049181, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}
       propertyPath: m_RootOrder
       value: 5
