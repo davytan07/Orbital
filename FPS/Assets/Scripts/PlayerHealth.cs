@@ -38,13 +38,13 @@ public class PlayerHealth : MonoBehaviour
         // updates health on the UI
     }
 
-    public bool zeroHealth()
+    public bool ZeroHealth()
     {
         return hitPoints == 0;
         // returns a bool on whether players health is 0
     }
 
-    public bool fullHealth()
+    public bool FullHealth()
     {
         return hitPoints == 100;
         // returns a bool on whether players health is full
