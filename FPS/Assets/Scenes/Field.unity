@@ -517,6 +517,11 @@ Transform:
   m_Father: {fileID: 1125063742}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!223 &698849431 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 4802008029704019471, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}
+  m_PrefabInstance: {fileID: 1297642914}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -13557,6 +13562,10 @@ PrefabInstance:
       propertyPath: highScoreText
       value: 
       objectReference: {fileID: 1884791780}
+    - target: {fileID: 8583354717287658295, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
+      propertyPath: impactCanvas
+      value: 
+      objectReference: {fileID: 698849431}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
 --- !u!114 &7713165518266321864 stripped

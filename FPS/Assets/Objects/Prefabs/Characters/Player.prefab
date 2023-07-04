@@ -945,6 +945,7 @@ GameObject:
   - component: {fileID: 1241617232941518511}
   - component: {fileID: 1773255966623615735}
   - component: {fileID: 7770472369895633991}
+  - component: {fileID: 8583354717287658295}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1115,8 +1116,6 @@ MonoBehaviour:
   fpscamera: {fileID: 7713165517349414580}
   zoomedOutFOV: 60
   zoomedInFOV: 20
-  zoomInSensitivity: 15
-  zoomOutSensitivity: 100
 --- !u!114 &7758567671956808643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1146,6 +1145,7 @@ MonoBehaviour:
   maxHealth: 100
   healthProgressUI: {fileID: 0}
   healthSliderCanvas: {fileID: 0}
+  invunerableTime: 10
 --- !u!114 &4466476559392085392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1209,6 +1209,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointsFromSpider: 100
   scoreText: {fileID: 0}
+  highScoreText: {fileID: 0}
+--- !u!114 &8583354717287658295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7713165518996794839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56ea405d31670984f8ddfedb60e35125, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactCanvas: {fileID: 0}
 --- !u!1001 &5528582280430544601
 PrefabInstance:
   m_ObjectHideFlags: 0

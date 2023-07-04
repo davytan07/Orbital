@@ -2,24 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DisplayDamage : MonoBehaviour
-{ 
+public class DisplayInvincibility : MonoBehaviour
+{
     [SerializeField] private Canvas impactCanvas;
-    [SerializeField] private float impactTime = 0.3f;
     void Start()
     {
         impactCanvas.enabled = false;
     }
 
-    public void ShowDamageImpact()
+    public void ShowInvincibility(float time)
     {
-        StartCoroutine(ShowSplatter());
+        StartCoroutine(ShowInvunerable(time));
     }
 
-    IEnumerator ShowSplatter()
+    IEnumerator ShowInvunerable(float time)
     {
         impactCanvas.enabled = true;
-        yield return new WaitForSeconds(impactTime);
+        yield return new WaitForSeconds(time);
         impactCanvas.enabled = false;
     }
 }

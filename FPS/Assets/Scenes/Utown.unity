@@ -1454,6 +1454,10 @@ PrefabInstance:
       propertyPath: highScoreText
       value: 
       objectReference: {fileID: 2811255175438932148}
+    - target: {fileID: 8583354717287658295, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
+      propertyPath: impactCanvas
+      value: 
+      objectReference: {fileID: 2811255175438932149}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
 --- !u!114 &585123337 stripped
@@ -7076,6 +7080,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!223 &2811255175438932149 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 4802008029704019471, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}
+  m_PrefabInstance: {fileID: 2811255175438932147}
+  m_PrefabAsset: {fileID: 0}
 --- !u!23 &2842816685269854002
 MeshRenderer:
   m_ObjectHideFlags: 0

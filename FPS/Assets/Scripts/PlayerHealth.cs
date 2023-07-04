@@ -12,15 +12,37 @@ public class PlayerHealth : MonoBehaviour
     [Header("Health UI Elements")]
     [SerializeField] private Image healthProgressUI;
     [SerializeField] private CanvasGroup healthSliderCanvas;
+    public delegate void TakeDamageFunc(float damage);
+    public static TakeDamageFunc TakeDamage;
+
+    [Header("Invunerability Elements")]
+    [SerializeField] float invunerableTime = 10f;
+
+    private void Start()
+    {
+        TurnDamageOn();
+    }
     //create a public method which reduces hitpoints by the amount of damage
-    public void TakeDamage(float damage)
+
+    private void TurnDamageOn()
+    {
+        TakeDamage = DoTakeDamage;
+    }
+    private void DoTakeDamage(float damage)
     {
         hitPoints -= damage;
         UpdateHealth();
+        GetComponent<DisplayDamage>().ShowDamageImpact();
         if (hitPoints <= 0)
         {
             GetComponent<DeathHandler>().HandleDeath();
         }
+    }
+
+    public void NoTakeDamage(float damage)
+    {
+        Invoke("TurnDamageOn", invunerableTime);
+        GetComponent<DisplayInvincibility>().ShowInvincibility(invunerableTime);
     }
 
     public void RecoverHealth(float health)

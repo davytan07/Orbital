@@ -47,11 +47,14 @@ MonoBehaviour:
   enemies:
   - enemyPrefab: {fileID: 3620415152566593780, guid: 2c51a42ac95064e40b1b5e24ba346ecc, type: 3}
     cost: 1
-  - enemyPrefab: {fileID: 3620415152566593780, guid: 2c51a42ac95064e40b1b5e24ba346ecc, type: 3}
+  pickups:
+  - pickupPrefab: {fileID: 4737219359727733791, guid: b4c9d23dcfd62864fb006b71ef31f706, type: 3}
     cost: 1
-  pickup: {fileID: 1978402433674860442, guid: b4c9d23dcfd62864fb006b71ef31f706, type: 3}
+  - pickupPrefab: {fileID: 2509845499941007016, guid: 6bd05028d897aee42a8966c1896a9c99, type: 3}
+    cost: 10
   currWave: 0
   enemiesToSpawn: []
+  pickupsToSpawn: []
   spawnPoints:
   - {fileID: 0}
   - {fileID: 0}

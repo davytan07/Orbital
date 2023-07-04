@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class WaveSpawner : MonoBehaviour
 {
-    public List<Enemy> enemies = new List<Enemy>();
-    public HealthPickup pickup;
+    public List<Enemy> enemies = new();
+    public List<PickUp> pickups = new();
     [SerializeField] private int currWave;
     private int waveValue;
-    public List<GameObject> enemiesToSpawn = new List<GameObject>();
+    private int pickupValue;
+    public List<GameObject> enemiesToSpawn = new();
+    public List<GameObject> pickupsToSpawn = new();
     private bool nextwavetospawn = false;
-
-    public List<Transform> spawnPoints = new List<Transform>();
+    public List<Transform> spawnPoints = new();
     Transform spawnLocation;
     public int waveDuration;
     private float waveTimer;
@@ -34,7 +35,9 @@ public class WaveSpawner : MonoBehaviour
     public void GenerateWave()
     {
         waveValue = currWave * 10;
+        pickupValue = currWave * 5;
         GenerateEnemies();
+        GeneratePickups();
 
         spawnInterval = waveDuration / enemiesToSpawn.Count; //gives a fixed time between each enemies
         waveTimer = waveDuration; // wave duration is read only
@@ -100,6 +103,37 @@ public class WaveSpawner : MonoBehaviour
         }
     }
 
+
+    public void GeneratePickups()
+    {
+        // create a temporary list of pickups to generate 
+        // in a loop grab a random pickup
+        // see if we can afford it
+        // if possible, add it to the list and deduct cost.
+
+        //repeat..
+
+        // when points are zero, leave the loop
+        List<GameObject> generatedPickups = new();
+        while (pickupValue > 0)
+        {
+            int randPickupId = Random.Range(0, pickups.Count);
+            int randPickupCost = pickups[randPickupId].cost;
+
+            if (pickupValue - randPickupCost >= 0)
+            {
+                generatedPickups.Add(pickups[randPickupId].pickupPrefab);
+                pickupValue -= randPickupCost;
+            }
+            else if (pickupValue == 0)
+            {
+                break;
+            }
+        }
+        pickupsToSpawn.Clear();
+        pickupsToSpawn = generatedPickups;
+    }
+
     IEnumerator NextWave()
     {
         // generate wave
@@ -131,11 +165,12 @@ public class WaveSpawner : MonoBehaviour
 
     public void SpawnPickup(Vector3 position)
     {
-        if (currNumOfPickups < 6 && Random.Range(0,5) == 2)
+        if (pickupsToSpawn.Count >0 && currNumOfPickups < 6 && Random.Range(0,5) == 2)
         {
-            Vector3 new_position = position + Vector3.up;
-            Instantiate(pickup, new_position, Quaternion.identity);
+            Vector3 new_position = position + Vector3.up; //spawn location to be 1 unit higher than enemy's transform
+            Instantiate(pickupsToSpawn[0], new_position, Quaternion.identity); //spawn the pickup
             currNumOfPickups += 1;
+            pickupsToSpawn.RemoveAt(0); //remove it
         }
     }
 
@@ -146,5 +181,12 @@ public class WaveSpawner : MonoBehaviour
 public class Enemy
 {
     public GameObject enemyPrefab;
+    public int cost;
+}
+
+[System.Serializable]
+public class PickUp
+{
+    public GameObject pickupPrefab;
     public int cost;
 }
