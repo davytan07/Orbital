@@ -134,6 +134,7 @@ MonoBehaviour:
   target: {fileID: 0}
   chaseRange: 25
   enemyCrawlSFX: {fileID: 1627383841553757980}
+  searchRange: 20
 --- !u!114 &5526477599450072840
 MonoBehaviour:
   m_ObjectHideFlags: 0
