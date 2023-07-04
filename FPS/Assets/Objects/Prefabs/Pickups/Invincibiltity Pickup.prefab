@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7293125856191785932}
   - component: {fileID: 5894908775175064195}
-  - component: {fileID: 8655226133320643885}
+  - component: {fileID: 4064097765912999411}
   m_Layer: 0
   m_Name: Invincibiltity Pickup
   m_TagString: Untagged
@@ -47,7 +47,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 2
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8655226133320643885
+--- !u!114 &4064097765912999411
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -56,7 +56,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2509845499941007016}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b54c95599635544d85f340c05a05330, type: 3}
+  m_Script: {fileID: 11500000, guid: fca353c92d17fa843aeaa6c993f94688, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8816051527789983265
