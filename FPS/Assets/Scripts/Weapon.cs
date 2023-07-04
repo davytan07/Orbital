@@ -7,7 +7,7 @@ public class Weapon : MonoBehaviour
 {
     [SerializeField] Camera FPCamera;
     [SerializeField] float range = 100f;
-    [SerializeField] float damage = 30f;
+    [SerializeField] float damage;
     [SerializeField] ParticleSystem muzzleFlash;
     [SerializeField] GameObject hitEffect;
     [SerializeField] Ammo ammoSlot;
@@ -21,11 +21,11 @@ public class Weapon : MonoBehaviour
    
     public void Shoot()
     {
-        if (ammoSlot.GetCurrentAmmo() > 0 && !pauseMenu.activeSelf)
+        if (!pauseMenu.activeSelf)
         {
             shootSFX.Play();
             PlayMuzzleFlash();
-            ammoSlot.ReducedAmmo();
+            Ammo.ReduceAmmo();
             ProcessRaycast();
         }
         
@@ -48,6 +48,14 @@ public class Weapon : MonoBehaviour
             EnemyHealth target = hit.transform.GetComponent<EnemyHealth>();
             // call a method on EnemyHealth that decreases the enemy's health
             if (target == null) return;
+            if (ammoSlot.GetCurrentAmmo() > 0)
+            {
+                damage = target.GetCurrentHealth();
+            }
+            else
+            {
+                damage = 30f;
+            }
             target.TakeDamage(damage);
 
         }

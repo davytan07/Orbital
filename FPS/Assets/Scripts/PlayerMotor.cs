@@ -8,19 +8,21 @@ public class PlayerMotor : MonoBehaviour
     private Vector3 playerVelocity;
     private StaminaBar staminaBar;
     private bool isGrounded;
+    [Header("General Parameters")]
     private float gravity = -9.8f;
     private float groundedForce = -2f;
     public float jumpHeight = 2f;
     public bool gameEnabled;
     public bool jumpEnabled;
 
-
-    [Header("Stamina Speed Parameters")]
+    [Header("Speed Parameters")]
     [HideInInspector] bool hasRegenerated = true;
     [HideInInspector] float speed = 5f;
     [SerializeField] private float sprintSpeed = 8f;
     [SerializeField] private float slowSpeed = 2f;
     [SerializeField] private float normalSpeed = 5f;
+
+    [Header("SFX Parameters")]
     [SerializeField] private AudioSource walkingSFX;
     [SerializeField] private AudioSource sprintingSFX;
     [SerializeField] private AudioSource slowWalkingSFX;

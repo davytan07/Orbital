@@ -70,6 +70,11 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
+    public float GetCurrentHealth()
+    {
+        return hitPoints;
+    }
+
     private void Die()
     {
         if (isDead) return;

@@ -3954,6 +3954,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7758567671956808643, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
+      propertyPath: ammoText
+      value: 
+      objectReference: {fileID: 913868356}
     - target: {fileID: 7770472369895633991, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
       propertyPath: scoreText
       value: 
@@ -5504,6 +5508,17 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7013069851615744438, guid: 7165944b752bfb14da1870256ac60a1c, type: 3}
+--- !u!114 &913868356 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 278480543563028184, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}
+  m_PrefabInstance: {fileID: 987536115}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!64 &918225796
 MeshCollider:
   m_ObjectHideFlags: 0
