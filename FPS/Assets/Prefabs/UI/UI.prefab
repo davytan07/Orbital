@@ -76,6 +76,11 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+<<<<<<< Updated upstream:FPS/Assets/Objects/Prefabs/UI/UI.prefab
+=======
+<<<<<<< Updated upstream:FPS/Assets/Objects/Prefabs/UI/UI.prefab
+=======
+>>>>>>> Stashed changes:FPS/Assets/Prefabs/UI/UI.prefab
 --- !u!1 &11745674624442424
 GameObject:
   m_ObjectHideFlags: 0
@@ -135,14 +140,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
+<<<<<<< Updated upstream:FPS/Assets/Objects/Prefabs/UI/UI.prefab
   m_Color: {r: 0.92983675, g: 0.9622642, b: 0.06808472, a: 1}
+=======
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+>>>>>>> Stashed changes:FPS/Assets/Prefabs/UI/UI.prefab
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< Updated upstream:FPS/Assets/Objects/Prefabs/UI/UI.prefab
   m_Sprite: {fileID: 21300000, guid: 13aface48381ed4488faf9bf2a7d28f7, type: 3}
+=======
+  m_Sprite: {fileID: 21300000, guid: 54857f23f0f91254d9ce611be4919103, type: 3}
+>>>>>>> Stashed changes:FPS/Assets/Prefabs/UI/UI.prefab
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -152,6 +165,10 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+<<<<<<< Updated upstream:FPS/Assets/Objects/Prefabs/UI/UI.prefab
+=======
+>>>>>>> Stashed changes:FPS/Assets/Prefabs/UI/UI.prefab
+>>>>>>> Stashed changes:FPS/Assets/Prefabs/UI/UI.prefab
 --- !u!1 &353454388556185627
 GameObject:
   m_ObjectHideFlags: 0
@@ -3146,7 +3163,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2b6470905422e4a4e83a6dbbdf8470f0, type: 3}
-    m_FontSize: 55
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4

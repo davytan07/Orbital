@@ -50,10 +50,21 @@ MonoBehaviour:
   pickups:
   - pickupPrefab: {fileID: 4737219359727733791, guid: b4c9d23dcfd62864fb006b71ef31f706, type: 3}
     cost: 1
+<<<<<<< Updated upstream:FPS/Assets/Objects/Prefabs/Characters/WaveSpawner.prefab
   - pickupPrefab: {fileID: 2509845499941007016, guid: 6bd05028d897aee42a8966c1896a9c99, type: 3}
     cost: 10
   - pickupPrefab: {fileID: 2509845499941007016, guid: e3f2eb167da569b4696a5f2bf76826da, type: 3}
     cost: 5
+=======
+<<<<<<< Updated upstream:FPS/Assets/Objects/Prefabs/Characters/WaveSpawner.prefab
+  pickup: {fileID: 1978402433674860442, guid: b4c9d23dcfd62864fb006b71ef31f706, type: 3}
+=======
+  - pickupPrefab: {fileID: 2509845499941007016, guid: 6bd05028d897aee42a8966c1896a9c99, type: 3}
+    cost: 8
+  - pickupPrefab: {fileID: 2509845499941007016, guid: e3f2eb167da569b4696a5f2bf76826da, type: 3}
+    cost: 4
+>>>>>>> Stashed changes:FPS/Assets/Prefabs/Characters/WaveSpawner.prefab
+>>>>>>> Stashed changes:FPS/Assets/Prefabs/Characters/WaveSpawner.prefab
   currWave: 0
   enemiesToSpawn: []
   pickupsToSpawn: []
