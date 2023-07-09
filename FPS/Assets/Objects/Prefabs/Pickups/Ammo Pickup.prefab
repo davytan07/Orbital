@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7293125856191785932}
   - component: {fileID: 5894908775175064195}
-  - component: {fileID: 3513663288313213051}
+  - component: {fileID: 8655226133320643885}
   m_Layer: 0
-  m_Name: Ammo Pickup 1
+  m_Name: Ammo Pickup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 2509845499941007016}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 1, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7892581858072391627}
@@ -45,9 +45,9 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 2
+  m_Radius: 0.7
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3513663288313213051
+--- !u!114 &8655226133320643885
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -56,9 +56,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2509845499941007016}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a9b1b3b9b120ab4ba6539b3e06e96d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b54c95599635544d85f340c05a05330, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthAmount: 40
 --- !u!1 &8816051527789983265
 GameObject:
   m_ObjectHideFlags: 0
@@ -121,7 +122,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 9208263314175391416, guid: 49352c3062f88684698a137c9d95278d, type: 3}
+  - {fileID: 2100000, guid: ddb1dce1f143142d29f1f10e787ff195, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
