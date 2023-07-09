@@ -53,6 +53,7 @@ MonoBehaviour:
 <<<<<<< Updated upstream:FPS/Assets/Objects/Prefabs/Characters/WaveSpawner.prefab
   - pickupPrefab: {fileID: 2509845499941007016, guid: 6bd05028d897aee42a8966c1896a9c99, type: 3}
     cost: 10
+<<<<<<< HEAD:FPS/Assets/Prefabs/Characters/WaveSpawner.prefab
   - pickupPrefab: {fileID: 2509845499941007016, guid: e3f2eb167da569b4696a5f2bf76826da, type: 3}
     cost: 5
 =======
@@ -65,6 +66,8 @@ MonoBehaviour:
     cost: 4
 >>>>>>> Stashed changes:FPS/Assets/Prefabs/Characters/WaveSpawner.prefab
 >>>>>>> Stashed changes:FPS/Assets/Prefabs/Characters/WaveSpawner.prefab
+=======
+>>>>>>> parent of ae84248 (Added OneShotPickup):FPS/Assets/Objects/Prefabs/Characters/WaveSpawner.prefab
   currWave: 0
   enemiesToSpawn: []
   pickupsToSpawn: []
