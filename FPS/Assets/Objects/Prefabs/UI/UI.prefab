@@ -4294,7 +4294,7 @@ GameObject:
   - component: {fileID: 6751933067493698859}
   - component: {fileID: 6751933067493698852}
   m_Layer: 0
-  m_Name: Im Done text
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4348,7 +4348,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Im Done
+  m_text: quit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ffe53f2ff645cc4daa7b8e0b39d86f3, type: 2}
   m_sharedMaterial: {fileID: 7868835476617041976, guid: 9ffe53f2ff645cc4daa7b8e0b39d86f3, type: 2}
@@ -4554,7 +4554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.023584902, b: 0.023584902, a: 1}
+  m_Color: {r: 1, g: 0.28627452, b: 0.28627452, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4792,7 +4792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.023584902, b: 0.023584902, a: 1}
+  m_Color: {r: 1, g: 0.28627452, b: 0.28627452, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5276,7 +5276,7 @@ GameObject:
   - component: {fileID: 6751933069526008178}
   - component: {fileID: 6751933069526008179}
   m_Layer: 0
-  m_Name: Play Again Text
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5330,7 +5330,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Play Again
+  m_text: main menu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ffe53f2ff645cc4daa7b8e0b39d86f3, type: 2}
   m_sharedMaterial: {fileID: 7868835476617041976, guid: 9ffe53f2ff645cc4daa7b8e0b39d86f3, type: 2}
