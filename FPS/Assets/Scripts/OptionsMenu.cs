@@ -7,22 +7,31 @@ using UnityEngine;
 public class OptionsMenu : MonoBehaviour
 {
     public AudioMixer BGMMixer;
+    public AudioMixer SFXMixer;
     [SerializeField] PlayerLook playerLook;
     [SerializeField] Toggle fullscreenToggle;
-    [SerializeField] Slider volumeSlider;
+    [SerializeField] Slider musicSlider;
+    [SerializeField] Slider SFXSlider;
     [SerializeField] Slider sensSlider;
 
     private void Update() {
-        Debug.Log(playerLook.xSensitivity);
+        // Debug.Log(playerLook.xSensitivity);
     }
     public void SetFullscreen(bool isFullscreen)
     {
         Screen.fullScreen = isFullscreen;
     }
 
-    public void SetVolume(float volume)
+    public void SetMusicVolume(float volume)
     {
+        Debug.Log("music volume " + volume);
         BGMMixer.SetFloat("BGMVolume", Mathf.Log10(volume) * 20);
+    }
+
+    public void SetSFXVolume(float volume)
+    {
+        Debug.Log("sfx volume " + volume);
+        SFXMixer.SetFloat("SFXVolume", Mathf.Log10(volume) * 20);
     }
 
     public void SetMouseSensitivity(float sens)
@@ -35,7 +44,8 @@ public class OptionsMenu : MonoBehaviour
     {
         Debug.Log("resetted");
         fullscreenToggle.enabled = true;
-        volumeSlider.value = 1f;
+        musicSlider.value = 1f;
+        SFXSlider.value = 1f;
         sensSlider.value = 50f;
     }
 }

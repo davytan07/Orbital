@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6644055721029840226}
   - component: {fileID: 5841169914387356423}
   m_Layer: 0
-  m_Name: Pistol Gun
+  m_Name: Pistol GUn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -137,6 +137,7 @@ MonoBehaviour:
   hitEffect: {fileID: 0}
   ammoSlot: {fileID: 0}
   shootSFX: {fileID: 5209135260266465681}
+  pauseMenu: {fileID: 0}
 --- !u!114 &5841169914387356423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,7 +191,7 @@ AudioSource:
   m_GameObject: {fileID: 7789340887584487635}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 73139a416cb6b884d9115f08cf67a07b, type: 2}
   m_audioClip: {fileID: 8300000, guid: 3a6d172b5994b8b42b6ea34a2c1e8de0, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
