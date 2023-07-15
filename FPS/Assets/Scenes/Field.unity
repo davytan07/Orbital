@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1191,6 +1191,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1041483729 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8951945572312515836, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}
+  m_PrefabInstance: {fileID: 1297642914}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1041483730 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1431106152450481582, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}
+  m_PrefabInstance: {fileID: 1297642914}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1052855630
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2049,7 +2071,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: dabc3256cde900f449a94cfe685f228f, type: 2}
   m_audioClip: {fileID: 8300000, guid: 41b2dc45d401b5947b3f7deb18de1259, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.7
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -13891,6 +13913,14 @@ PrefabInstance:
       propertyPath: impactCanvas
       value: 
       objectReference: {fileID: 1297642915}
+    - target: {fileID: 2068210374094836339, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 1041483730}
+    - target: {fileID: 2068210374094836339, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
+      propertyPath: highScoreText
+      value: 
+      objectReference: {fileID: 1041483729}
     - target: {fileID: 2068210374094836339, guid: d73e2a82bf4854f49b3aa517b03079b3, type: 3}
       propertyPath: gameOverCanvas
       value: 
