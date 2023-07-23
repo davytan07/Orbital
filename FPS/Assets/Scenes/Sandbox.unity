@@ -377,6 +377,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ammo Pickup 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2509845499941007016, guid: e3f2eb167da569b4696a5f2bf76826da, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7293125856191785932, guid: e3f2eb167da569b4696a5f2bf76826da, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -638,6 +642,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 952493005}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &996022502
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7632208899241675807, guid: c4fa88f9170cb2b49a0958be0b700517, type: 3}
+      propertyPath: m_Name
+      value: Drone
+      objectReference: {fileID: 0}
+    - target: {fileID: 7632208899242168383, guid: c4fa88f9170cb2b49a0958be0b700517, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7632208899242168383, guid: c4fa88f9170cb2b49a0958be0b700517, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 32.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7632208899242168383, guid: c4fa88f9170cb2b49a0958be0b700517, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7632208899242168383, guid: c4fa88f9170cb2b49a0958be0b700517, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7632208899242168383, guid: c4fa88f9170cb2b49a0958be0b700517, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7632208899242168383, guid: c4fa88f9170cb2b49a0958be0b700517, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.00000003774895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7632208899242168383, guid: c4fa88f9170cb2b49a0958be0b700517, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7632208899242168383, guid: c4fa88f9170cb2b49a0958be0b700517, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7632208899242168383, guid: c4fa88f9170cb2b49a0958be0b700517, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7632208899242168383, guid: c4fa88f9170cb2b49a0958be0b700517, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7632208899242168383, guid: c4fa88f9170cb2b49a0958be0b700517, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c4fa88f9170cb2b49a0958be0b700517, type: 3}
 --- !u!4 &1006423128 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5729142289535358843, guid: 508fd7519360d8042aab7ba8b70494c4, type: 3}
@@ -1379,6 +1440,10 @@ PrefabInstance:
     - target: {fileID: 5729142289535358841, guid: 508fd7519360d8042aab7ba8b70494c4, type: 3}
       propertyPath: m_Name
       value: WaveSpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 5729142289535358841, guid: 508fd7519360d8042aab7ba8b70494c4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5729142289535358842, guid: 508fd7519360d8042aab7ba8b70494c4, type: 3}
       propertyPath: spawnPoints.Array.data[0]
