@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -757,6 +757,7 @@ GameObject:
   m_Component:
   - component: {fileID: 907454831}
   - component: {fileID: 907454832}
+  - component: {fileID: 907454833}
   m_Layer: 0
   m_Name: Invisble Wall (2)
   m_TagString: Untagged
@@ -792,6 +793,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!208 &907454833
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907454830}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &919702118
 GameObject:
   m_ObjectHideFlags: 0
@@ -802,6 +819,7 @@ GameObject:
   m_Component:
   - component: {fileID: 919702119}
   - component: {fileID: 919702120}
+  - component: {fileID: 919702121}
   m_Layer: 0
   m_Name: Invisble Wall (6)
   m_TagString: Untagged
@@ -837,6 +855,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!208 &919702121
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919702118}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &928193696
 GameObject:
   m_ObjectHideFlags: 0
@@ -847,6 +881,7 @@ GameObject:
   m_Component:
   - component: {fileID: 928193697}
   - component: {fileID: 928193698}
+  - component: {fileID: 928193699}
   m_Layer: 0
   m_Name: Invisble Wall (3)
   m_TagString: Untagged
@@ -882,6 +917,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!208 &928193699
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928193696}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1001 &955866060
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1156,6 +1207,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1024399634}
   - component: {fileID: 1024399635}
+  - component: {fileID: 1024399636}
   m_Layer: 0
   m_Name: Invisble Wall (4)
   m_TagString: Untagged
@@ -1191,6 +1243,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!208 &1024399636
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024399633}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!114 &1041483729 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8951945572312515836, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}
@@ -2242,6 +2310,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1650737090}
   - component: {fileID: 1650737091}
+  - component: {fileID: 1650737092}
   m_Layer: 0
   m_Name: Invisble Wall (1)
   m_TagString: Untagged
@@ -2277,6 +2346,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!208 &1650737092
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650737089}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1683633955
 GameObject:
   m_ObjectHideFlags: 0
@@ -2504,6 +2589,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2002026060}
   - component: {fileID: 2002026061}
+  - component: {fileID: 2002026062}
   m_Layer: 0
   m_Name: Invisble Wall (5)
   m_TagString: Untagged
@@ -2539,6 +2625,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!208 &2002026062
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002026059}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &2042142615 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7455389212746350286, guid: ec40ad5dbc6514cddb894430f89dfe5a, type: 3}

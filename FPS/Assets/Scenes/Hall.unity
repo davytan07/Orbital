@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731704, g: 0.1341472, b: 0.121078566, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731713, g: 0.13414738, b: 0.121078536, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1880,6 +1880,7 @@ GameObject:
   m_Component:
   - component: {fileID: 280314684}
   - component: {fileID: 280314683}
+  - component: {fileID: 280314685}
   m_Layer: 0
   m_Name: Invisible Wall (5)
   m_TagString: Untagged
@@ -1915,6 +1916,22 @@ Transform:
   m_Father: {fileID: 1949528622}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -66.8, z: 0}
+--- !u!208 &280314685
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280314682}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &281353178
 GameObject:
   m_ObjectHideFlags: 0
@@ -1963,6 +1980,7 @@ GameObject:
   m_Component:
   - component: {fileID: 288689409}
   - component: {fileID: 288689410}
+  - component: {fileID: 288689411}
   m_Layer: 0
   m_Name: Invisible Wall (2)
   m_TagString: Untagged
@@ -1998,6 +2016,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!208 &288689411
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288689408}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!64 &289907232
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3353,6 +3387,7 @@ GameObject:
   m_Component:
   - component: {fileID: 509377294}
   - component: {fileID: 509377295}
+  - component: {fileID: 509377296}
   m_Layer: 0
   m_Name: Invisible Wall (3)
   m_TagString: Untagged
@@ -3388,6 +3423,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!208 &509377296
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509377293}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!64 &516465460
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4473,6 +4524,7 @@ GameObject:
   m_Component:
   - component: {fileID: 732115088}
   - component: {fileID: 732115089}
+  - component: {fileID: 732115090}
   m_Layer: 0
   m_Name: Invisible Wall (1)
   m_TagString: Untagged
@@ -4508,6 +4560,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!208 &732115090
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732115087}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!64 &737037665
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6898,6 +6966,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1117582194}
   - component: {fileID: 1117582195}
+  - component: {fileID: 1117582196}
   m_Layer: 0
   m_Name: Invisible Wall (6)
   m_TagString: Untagged
@@ -6933,6 +7002,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!208 &1117582196
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117582193}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!64 &1119172307
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14315,6 +14400,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1830065203}
   - component: {fileID: 1830065204}
+  - component: {fileID: 1830065205}
   m_Layer: 0
   m_Name: Invisible Wall (4)
   m_TagString: Untagged
@@ -14350,6 +14436,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!208 &1830065205
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830065202}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!64 &1842754974
 MeshCollider:
   m_ObjectHideFlags: 0

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2097,7 +2097,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: pick up the heath tokens to restore your CAP!
+  m_text: pick up the health tokens to restore your CAP!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ffe53f2ff645cc4daa7b8e0b39d86f3, type: 2}
   m_sharedMaterial: {fileID: 7868835476617041976, guid: 9ffe53f2ff645cc4daa7b8e0b39d86f3, type: 2}
