@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -456,6 +456,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1663912882}
     m_Modifications:
+    - target: {fileID: -4632596409201090750, guid: 2c51a42ac95064e40b1b5e24ba346ecc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 381127113177880004, guid: 2c51a42ac95064e40b1b5e24ba346ecc, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.9806808
@@ -4261,6 +4265,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1663912882}
     m_Modifications:
+    - target: {fileID: -4632596409201090750, guid: 2c51a42ac95064e40b1b5e24ba346ecc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 381127113177880004, guid: 2c51a42ac95064e40b1b5e24ba346ecc, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.9806808
@@ -5699,7 +5707,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &1606665264
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5710,7 +5718,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: dabc3256cde900f449a94cfe685f228f, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 41b2dc45d401b5947b3f7deb18de1259, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 613a506687a86fa4da864bdb6501919f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.6
   m_Pitch: 1
@@ -6507,6 +6515,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1663912882}
     m_Modifications:
+    - target: {fileID: -4632596409201090750, guid: 2c51a42ac95064e40b1b5e24ba346ecc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 381127113177880004, guid: 2c51a42ac95064e40b1b5e24ba346ecc, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.9806808
