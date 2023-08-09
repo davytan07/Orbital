@@ -29,8 +29,6 @@ public class Weapon : MonoBehaviour
             ProcessRaycast();
         }
         
-        
-        
     }
 
     private void CreateHitImpact(RaycastHit hit)

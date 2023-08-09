@@ -23,13 +23,14 @@ public class InputManager : MonoBehaviour
         pauseMenu = GetComponent<PauseMenu>();
 
         foot.Jump.performed += ctx => motor.Jump();
-        foot.WeaponZoom.performed += ctx => zoom.ProcessZoom();
+        foot.WeaponZoom.started += ctx => zoom.ProcessZoom(foot.WeaponZoom.ReadValue<float>() > 0.1f);
+        foot.WeaponZoom.canceled += ctx => zoom.ProcessZoom(foot.WeaponZoom.ReadValue<float>() > 0.1f);
         foot.Pause.performed += ctx => pauseMenu.TogglePause();
     }
-    
+
     void FixedUpdate()
     {
-        motor.ProcessMove(foot.Movement.ReadValue<Vector2>(), foot.Sprint.ReadValue<float>() > 0.1f );
+        motor.ProcessMove(foot.Movement.ReadValue<Vector2>(), foot.Sprint.ReadValue<float>() > 0.1f);
     }
     private void LateUpdate() 
     {

@@ -134,7 +134,7 @@ MonoBehaviour:
   target: {fileID: 0}
   chaseRange: 25
   enemyCrawlSFX: {fileID: 1627383841553757980}
-  searchRange: 20
+  searchRange: 60
 --- !u!114 &5526477599450072840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,6 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 100
+  pointsFromSpider: 100
   EnemyDeath: {fileID: 4491449627801885282}
   EnemyNoise: {fileID: -4632596409201090750}
   enemyCount: {fileID: 0}

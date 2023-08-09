@@ -38,27 +38,25 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        distanceToTarget = Vector3.Distance(target.position, transform.position);
         if (health.IsDead())
         {
             enabled = false;
             navMeshAgent.enabled = false;
         }
-        distanceToTarget = Vector3.Distance(target.position, transform.position);
-        if (isProvoked)
+        else if (isProvoked)
         {
             EngageTarget();
         }
         else if (distanceToTarget <= chaseRange)
         {
             isProvoked = true;
-            navMeshAgent.SetDestination(target.position);
         }
         else
         {
             if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
             {
-                Vector3 point;
-                if (RandomPoint(transform.position, searchRange, out point))
+                if (RandomPoint(target.position, searchRange, out Vector3 point))
                 {
                     Debug.DrawRay(point, Vector3.up, Color.blue, 1.0f); //so you can see with gizmos
                     ChaseTarget(point);
@@ -97,7 +95,7 @@ public class EnemyAI : MonoBehaviour
     {
         GetComponent<Animator>().SetBool("Walk Forward", false);
         GetComponent<Animator>().SetTrigger("Stab Attack");
-        Debug.Log(name + " has seeked and is destroying" + target.name);
+        //Debug.Log(name + " has seeked and is destroying" + target.name);
     }
 
     private void FaceTarget()

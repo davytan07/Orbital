@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] float hitPoints = 100f;
+    [SerializeField] int pointsFromSpider = 100;
     [SerializeField] AudioSource EnemyDeath;
     [SerializeField] AudioSource EnemyNoise;
     [SerializeField] WaveSpawner enemyCount;
@@ -66,7 +67,7 @@ public class EnemyHealth : MonoBehaviour
         if (hitPoints <= 0)
         {
             Die();
-            points.AddPoints();
+            points.AddPoints(pointsFromSpider);
         }
     }
 

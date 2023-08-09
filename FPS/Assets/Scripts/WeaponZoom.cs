@@ -8,7 +8,6 @@ public class WeaponZoom : MonoBehaviour
     [SerializeField] float zoomedOutFOV = 60f;
     [SerializeField] float zoomedInFOV = 20f;
 
-    bool zoomedInToggle = false;
     PlayerLook playerLook;
 
     private void Start()
@@ -16,19 +15,17 @@ public class WeaponZoom : MonoBehaviour
         playerLook = GetComponent<PlayerLook>();
     }
 
-    public void ProcessZoom()
+    public void ProcessZoom(bool isKeyHeld)
     {
        
-        if (zoomedInToggle == false)
+        if (isKeyHeld)
         {
-            zoomedInToggle = true;
             fpscamera.fieldOfView = zoomedInFOV;
             playerLook.xSensitivity /= 3;
             playerLook.ySensitivity /= 3;
         }
         else
         {
-            zoomedInToggle = false;
             fpscamera.fieldOfView = zoomedOutFOV;
             playerLook.xSensitivity *= 3;
             playerLook.ySensitivity *= 3;

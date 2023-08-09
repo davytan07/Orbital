@@ -7,7 +7,6 @@ using TMPro;
 public class PointsSystem : MonoBehaviour
 {
     private int currPoints = 0;
-    [SerializeField] private int pointsFromSpider = 100;
     [SerializeField] Text scoreText;
     [SerializeField] TextMeshProUGUI highScoreText;
 
@@ -17,7 +16,7 @@ public class PointsSystem : MonoBehaviour
     {
         UpdateHighScoreText();
     }
-    public void AddPoints()
+    public void AddPoints(int pointsFromSpider)
     {
         currPoints += pointsFromSpider;
         scoreText.text = currPoints.ToString();

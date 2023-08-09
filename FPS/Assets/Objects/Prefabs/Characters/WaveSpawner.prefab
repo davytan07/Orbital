@@ -47,6 +47,8 @@ MonoBehaviour:
   enemies:
   - enemyPrefab: {fileID: 3620415152566593780, guid: 2c51a42ac95064e40b1b5e24ba346ecc, type: 3}
     cost: 1
+  - enemyPrefab: {fileID: 3620415152566593780, guid: f67babefdef4d274caf1ada5a04cd5a2, type: 3}
+    cost: 20
   pickups:
   - pickupPrefab: {fileID: 4737219359727733791, guid: b4c9d23dcfd62864fb006b71ef31f706, type: 3}
     cost: 1

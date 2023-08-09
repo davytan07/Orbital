@@ -23,7 +23,6 @@ public class OneShotAmmoPickup : MonoBehaviour
         {
             FindObjectOfType<Ammo>().IncreaseAmmo(numOfAmmo);
             Ammo.ReduceAmmo = FindObjectOfType<Ammo>().ReduceOneShotAmmo;
-            Debug.Log("player did what players do");
             totaPickups.currNumOfPickups -= 1;
             Destroy(gameObject);
         }
