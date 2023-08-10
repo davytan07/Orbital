@@ -35,16 +35,20 @@ public class PauseMenu : MonoBehaviour
     // Pauses the game
     public void PauseGame()
     {
-        bgMusic.Pause();
-        motor.gameEnabled = false;
-        motor.MuteMovement();
-        // AudioListener.volume = 0f;
-        Cursor.visible = true;
-        pauseMenu.SetActive(true);
-        isPaused = true;
-        Time.timeScale = 0f;
-        ClickButtonSound();
-        // Debug.Log(motor.gameEnabled);
+        // Check if game is not over (Timescale != 0)
+        if (Time.timeScale != 0)
+        {
+            bgMusic.Pause();
+            motor.gameEnabled = false;
+            motor.MuteMovement();
+            // AudioListener.volume = 0f;
+            Cursor.visible = true;
+            pauseMenu.SetActive(true);
+            isPaused = true;
+            Time.timeScale = 0f;
+            ClickButtonSound();
+            // Debug.Log(motor.gameEnabled);
+        }
     }
 
     // Resumes the game
