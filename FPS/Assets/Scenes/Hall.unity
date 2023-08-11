@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731704, g: 0.1341472, b: 0.121078566, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731713, g: 0.13414736, b: 0.12107852, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -183,7 +183,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 12556470}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -57.49, y: -21.6, z: 97.37}
+  m_LocalPosition: {x: 108.99751, y: -17.613329, z: 243.67386}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6093,7 +6093,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 832232610}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -51.47, y: -22.188, z: 193.35}
+  m_LocalPosition: {x: 53.938442, y: -20.109186, z: 237.86748}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6536,7 +6536,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 901998235}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -57.95, y: -22.188, z: 191.84}
+  m_LocalPosition: {x: 106.17826, y: -17.699337, z: 238.72641}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6648,7 +6648,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 939659195}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 53.046, y: -17.187, z: 123.66}
+  m_LocalPosition: {x: 65.253716, y: -21.255781, z: 182.8956}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7478,7 +7478,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031625079}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 49.897, y: -20.17, z: 239.43}
+  m_LocalPosition: {x: -10.73552, y: -20.850893, z: 182.87154}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9855,7 +9855,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5729142289535358842, guid: 508fd7519360d8042aab7ba8b70494c4, type: 3}
       propertyPath: spawnPoints.Array.size
-      value: 12
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5729142289535358842, guid: 508fd7519360d8042aab7ba8b70494c4, type: 3}
       propertyPath: spawnPoints.Array.data[0]
@@ -9868,39 +9868,39 @@ PrefabInstance:
     - target: {fileID: 5729142289535358842, guid: 508fd7519360d8042aab7ba8b70494c4, type: 3}
       propertyPath: spawnPoints.Array.data[2]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1628805256}
     - target: {fileID: 5729142289535358842, guid: 508fd7519360d8042aab7ba8b70494c4, type: 3}
       propertyPath: spawnPoints.Array.data[3]
       value: 
-      objectReference: {fileID: 1628805256}
+      objectReference: {fileID: 832232611}
     - target: {fileID: 5729142289535358842, guid: 508fd7519360d8042aab7ba8b70494c4, type: 3}
       propertyPath: spawnPoints.Array.data[4]
       value: 
-      objectReference: {fileID: 832232611}
+      objectReference: {fileID: 901998236}
     - target: {fileID: 5729142289535358842, guid: 508fd7519360d8042aab7ba8b70494c4, type: 3}
       propertyPath: spawnPoints.Array.data[5]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2047839640}
     - target: {fileID: 5729142289535358842, guid: 508fd7519360d8042aab7ba8b70494c4, type: 3}
       propertyPath: spawnPoints.Array.data[6]
       value: 
-      objectReference: {fileID: 901998236}
+      objectReference: {fileID: 12556471}
     - target: {fileID: 5729142289535358842, guid: 508fd7519360d8042aab7ba8b70494c4, type: 3}
       propertyPath: spawnPoints.Array.data[7]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 939659196}
     - target: {fileID: 5729142289535358842, guid: 508fd7519360d8042aab7ba8b70494c4, type: 3}
       propertyPath: spawnPoints.Array.data[8]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1237740842}
     - target: {fileID: 5729142289535358842, guid: 508fd7519360d8042aab7ba8b70494c4, type: 3}
       propertyPath: spawnPoints.Array.data[9]
       value: 
-      objectReference: {fileID: 2047839640}
+      objectReference: {fileID: 939659196}
     - target: {fileID: 5729142289535358842, guid: 508fd7519360d8042aab7ba8b70494c4, type: 3}
       propertyPath: spawnPoints.Array.data[10]
       value: 
-      objectReference: {fileID: 12556471}
+      objectReference: {fileID: 939659196}
     - target: {fileID: 5729142289535358842, guid: 508fd7519360d8042aab7ba8b70494c4, type: 3}
       propertyPath: spawnPoints.Array.data[11]
       value: 
@@ -11226,7 +11226,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1525018949}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 55.83, y: -20.17, z: 260.57}
+  m_LocalPosition: {x: 61.52235, y: -20.964602, z: 174.68182}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11765,7 +11765,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1628805255}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 59.87, y: -21.05, z: 182.56}
+  m_LocalPosition: {x: 58.435413, y: -20.198587, z: 250.02634}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13723,7 +13723,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2047839639}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -53.41, y: -21.6, z: 118.68}
+  m_LocalPosition: {x: -14.716135, y: -20.72223, z: 178.10623}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
