@@ -4,3 +4,9 @@ Necro Undead Survival is a 3D FPS survival shooter created with Unity. You play 
 
 ## Design
 Maps were created using RenderDocs https://renderdoc.org/builds, a tool used to capture Google Maps 3D data for import into Blender followed by Unity. Free assets for cars, guns, enemies and barriers were used for the game design.
+
+## Video Demo
+https://drive.google.com/file/d/1lJU2ZrLD7u9TJchbN9Gd86sYX5lXHTuO/view?usp=drive_link
+
+## Project READMe (Documentation)
+https://docs.google.com/document/d/1pmQw5w-v8FGckERZInjZmh3o_Yjx5Vq8mxoOcHMVbOo/edit?usp=drive_link
